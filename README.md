@@ -1,2 +1,0 @@
-# clickdummy
-YAAYorNAAY.com

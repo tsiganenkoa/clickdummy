@@ -1,0 +1,28 @@
+@mixin category-gradient-linear($color) {
+  background: -webkit-linear-gradient(transparent, $color); /* Safari 5.1 to 6.0 */
+  background: linear-gradient(transparent, $color); /* Standard syntax */
+} 
+
+@mixin retina {
+  @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+@mixin pad {
+  @media only screen and (min-width: 768px){
+    @content;
+  }
+}
+
+@mixin phone {
+  @media only screen and (max-width: 767px){
+    @content;
+  }
+}
