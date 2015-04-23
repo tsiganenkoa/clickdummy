@@ -1,0 +1,29 @@
+.cup{
+  background: url(../img/cup_placeholder.png) left bottom no-repeat;
+  background-size: cover;
+  position: relative;
+  .cup-val{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+  &.gold .cup-val{
+    background-image: url(../img/cup_gold.png);
+  }
+  &.bronze .cup-val{
+    background-image: url(../img/cup_bronze.png);
+  }
+  &.silver .cup-val{
+    background-image: url(../img/cup_silver.png);
+  }
+  &.full-filled{
+    background-image: none;
+    .cup-val{
+      height: 100%;
+    }
+  }
+}

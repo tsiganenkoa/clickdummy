@@ -1,0 +1,106 @@
+.page-categories{
+  &.bar-subheader{
+    line-height: 35px;
+    text-align: center;
+  }
+  &.page{
+    bottom: 70px;
+    @include iphone5-and-lower{
+      bottom: 60px;
+    }
+    .photo-list-item{
+      .rank-circle{
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        display: flex;
+        justify-content: center; /* align horizontal */
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        font-size: 12px;;
+        .rank-circle-inner{
+          display: block;
+          .cup{
+            width: 19px;
+            height: 20px;
+            margin: 0px auto;
+          }
+        }
+      }
+    }
+  }
+  &.bar-footer{
+    height: 70px;
+    @include iphone5-and-lower{
+      height: 60px;
+    }
+    .camera-button{
+      position: absolute;
+      left: 50%;
+      bottom: -10px;
+      margin-left: -45px;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      text-align: center;
+      background-color: #26292e;
+      color: #fff;
+      padding-top: 18px;
+      .icon{
+        font-size: 45px;
+      }
+      @include iphone5-and-lower{
+        height: 86px;
+        width: 86px;
+        margin-left: -40px;
+        padding-top: 15px;
+        bottom: -15px;
+      }
+    }
+    .left-area, .right-area{
+      float: left;
+      width: 50%;
+      padding-top: 10px;
+      @include iphone5-and-lower{
+        padding-top: 5px;
+      }
+      span{
+        display: block;
+        font-weight: bold;
+      }
+    }
+    .left-area{
+      padding-left: 60px;
+      position: relative;
+      .cup{
+        position: absolute;
+        width: 30px;
+        height: 32px;
+        left: 20px;
+        top: 14px;
+      }
+      @include iphone5-and-lower{
+        padding-left: 50px;
+        .cup{
+          left: 10px;
+          top: 9px;
+        }
+      }
+    }
+    .right-area{
+      padding-left: 75px;
+      @include iphone6p-and-higher{
+        padding-left: 85px;
+      }
+      @include iphone5-and-lower{
+        padding-left: 65px;
+      }
+    }
+  }
+}

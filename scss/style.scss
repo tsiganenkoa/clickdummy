@@ -2,8 +2,6 @@
 @import "global/fonts";
 @import "global/variables";
 @import "global/mixins";
-@import "global/icons";
-@import "global/responsive";
 
 body{
   color: $my-app-textcolor;
@@ -44,6 +42,9 @@ ng-form {
 @import "partials/navbar";
 @import "partials/sidemenu";
 @import "partials/buttons";
+@import "partials/cup";
+@import "partials/photo_list";
 
 @import "pages/login_register";
 @import "pages/introduction";
+@import "pages/categories";

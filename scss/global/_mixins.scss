@@ -1,7 +1,14 @@
 @mixin category-gradient-linear($color) {
   background: -webkit-linear-gradient(transparent, $color); /* Safari 5.1 to 6.0 */
   background: linear-gradient(transparent, $color); /* Standard syntax */
-} 
+}
+
+@mixin vertical-gradient($top, $bottom){
+    background: -webkit-linear-gradient(bottom, $bottom, $top);
+    background: -o-linear-gradient(top, $bottom, $top);
+    background: -moz-linear-gradient(top, $bottom, $top);
+    background: linear-gradient(to top, $bottom, $top);
+}
 
 @mixin retina {
   @media

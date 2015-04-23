@@ -1,0 +1,75 @@
+.photo-list{
+  margin: 0px;
+  padding: 0px;
+  .photo-list-item{
+    float: left;
+    border-color: #fff;
+    border-style: solid;
+    border-bottom-width: 2px;
+    margin: 0px;
+    padding: 0px;
+    width: 50%;
+    height: 240px;
+    @include iphone5-and-lower{
+      height: 200px;
+    }
+    @include iphone6p-and-higher{
+      height: 275px;
+    }
+    position: relative;
+    &:nth-child(odd){
+      border-right-width: 1px;
+    }
+    &:nth-child(even){
+      border-left-width: 1px;
+    }
+    .image{
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      right: 0px;
+      bottom: 0px; 
+    }
+    .gradient-bottom{
+      height: 50%;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      @include vertical-gradient($category-gradient-grey-start, $category-gradient-grey-end);
+      &.pink{
+        @include vertical-gradient($category-gradient-pink-start, $category-gradient-pink-end);
+      }
+      &.blue{
+        @include vertical-gradient($category-gradient-blue-start, $category-gradient-blue-end);
+      }
+    }
+    .text-wrapper{
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      color: #fff;
+      padding: 10px 15px;
+      .title{
+        font-size: 1.2em;
+        line-height: 1.2;
+      }
+      .numbers{
+        font-size: 0.8em;
+        height: 20px;
+        line-height: 20px;
+        margin-top: 5px;
+        span:first-child{
+          float: left;
+        }
+        span:last-child{
+          float: right;
+        }
+      }
+    }
+  }
+}

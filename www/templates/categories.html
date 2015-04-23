@@ -2,9 +2,37 @@
   <ion-nav-buttons side="left">
     <button class="button button-icon button-clear ion-ios-gear-outline"></button>
   </ion-nav-buttons>
-  <ion-content class="page page-categories">
-    <div class="page-description">
-      
+  <div class="bar bar-subheader page-categories">
+    YAAYs this week still 12 hours 21 seconds
+  </div>
+  <ion-content class="page page-categories has-subheader">
+    <div class="list-wrapper">
+      <ul class="photo-list is-category">
+        <li class="photo-list-item" ng-repeat="item in categories">
+          <div class="image" style="background-image: url({{item.image}});"></div>
+          <div class="gradient-bottom {{item.category}}"></div>
+          <div class="rank-circle">
+            <div class="rank-circle-inner">50x<cup type="item.cup" fill="1"></cup>5,000</div>
+          </div>
+          <div class="text-wrapper">
+            <div class="title">{{item.name}}</div>
+            <div class="numbers">
+              <span>21 Followers</span>
+              <span>9 Local</span>
+            </div>
+          </div><!-- .text-wrapper -->
+        </li>
+      </ul><!-- photo-list-->
     </div>
   </ion-content>
+  <ion-footer-bar class="page-categories">
+    <div class="left-area">
+      <cup type="'bronze'" fill="0.9"></cup>
+      YAAYs: <span>8,032</span>
+    </div>
+    <a class="camera-button"><i class="icon ion-ios-camera-outline"></i></a>
+    <div class="right-area">
+      Followers: <span>1,032</span>
+    </div>
+  </ion-footer-bar>
 </ion-view>
