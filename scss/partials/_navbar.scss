@@ -1,0 +1,14 @@
+.nav-bar-block{
+  .bar.bar-stable{
+    .button.button-icon{
+      &:before{
+        font-size: 28px;
+      }
+    }
+    .title{
+      font-size: 23px;
+      font-family: 'OpenSans-Bold';
+      color: #26292e;
+    }
+  }
+}

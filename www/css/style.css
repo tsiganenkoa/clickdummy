@@ -175,6 +175,13 @@ ng-form {
 .page {
   background-color: #ffffff; }
 
+.nav-bar-block .bar.bar-stable .button.button-icon:before {
+  font-size: 28px; }
+.nav-bar-block .bar.bar-stable .title {
+  font-size: 23px;
+  font-family: 'OpenSans-Bold';
+  color: #26292e; }
+
 .menu.menu-left {
   background-color: #444444;
   color: #ffffff; }
@@ -187,6 +194,34 @@ ng-form {
       color: #ffffff; }
     .menu.menu-left .item .icon {
       color: #ccc; }
+
+.page .button {
+  height: 50px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.95em;
+  font-family: 'OpenSans-Bold';
+  letter-spacing: 2px;
+  min-height: 0px; }
+  @media only screen and (max-width: 320px) {
+    .page .button {
+      height: 40px;
+      border-radius: 20px;
+      line-height: 40px; } }
+  .page .button.button-blue {
+    background-color: #43609c;
+    border-color: #43609c; }
+  .page .button.button-green {
+    background-color: #82ca20;
+    border-color: #82ca20; }
+  .page .button:hover {
+    color: #fff; }
+  .page .button:active {
+    background-color: transparent; }
 
 .page-start, .page-login, .page-complete-profile, .page-forgot-password, .page-forgot-password-code {
   padding: 28px;
@@ -218,27 +253,9 @@ ng-form {
       font-size: 0.8em;
       margin-top: 5px; }
   .page-start .button, .page-login .button, .page-complete-profile .button, .page-forgot-password .button, .page-forgot-password-code .button {
-    width: 100%;
-    height: 50px;
-    display: block;
-    line-height: 50px;
-    border-radius: 25px;
-    background-color: transparent;
-    border-color: #fff;
-    text-transform: uppercase;
     margin-bottom: 15px;
-    font-size: 0.95em;
-    font-family: 'OpenSans-Bold';
-    letter-spacing: 2px;
-    min-height: 0px; }
-    @media only screen and (max-width: 320px) {
-      .page-start .button, .page-login .button, .page-complete-profile .button, .page-forgot-password .button, .page-forgot-password-code .button {
-        height: 40px;
-        border-radius: 20px;
-        line-height: 40px; } }
-    .page-start .button.button-blue, .page-login .button.button-blue, .page-complete-profile .button.button-blue, .page-forgot-password .button.button-blue, .page-forgot-password-code .button.button-blue {
-      background-color: #43609c;
-      border-color: #43609c; }
+    width: 100%;
+    display: block; }
   .page-start form .list, .page-login form .list, .page-complete-profile form .list, .page-forgot-password form .list, .page-forgot-password-code form .list {
     margin: 0px;
     background-color: transparent; }
@@ -434,6 +451,9 @@ ng-form {
   height: 100%; }
 .page-introduction .slidebox .slider-pager {
   bottom: 25px; }
+  @media only screen and (max-width: 320px) and (max-height: 480px) {
+    .page-introduction .slidebox .slider-pager {
+      bottom: 15px; } }
 .page-introduction .slidebox .intro-item {
   position: relative;
   padding-top: 45px;
@@ -444,6 +464,9 @@ ng-form {
     padding: 40px 30px;
     text-align: center;
     line-height: 1.3; }
+    @media only screen and (max-width: 320px) and (max-height: 480px) {
+      .page-introduction .slidebox .intro-item .tip-text {
+        padding-top: 20px; } }
   .page-introduction .slidebox .intro-item .image {
     margin: 0px 15px;
     height: 100%;
@@ -456,20 +479,7 @@ ng-form {
   bottom: 20px;
   width: 90%;
   left: 50%;
-  margin-left: -45%;
-  height: 50px;
-  line-height: 50px;
-  border-radius: 25px;
-  background-color: #82ca20;
-  border-color: #82ca20;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 0.95em;
-  font-family: 'OpenSans-Bold';
-  letter-spacing: 2px;
-  min-height: 0px; }
-  @media only screen and (max-width: 320px) {
+  margin-left: -45%; }
+  @media only screen and (max-width: 320px) and (max-height: 480px) {
     .page-introduction .button.btn-start {
-      height: 40px;
-      border-radius: 20px;
-      line-height: 40px; } }
+      bottom: 10px; } }

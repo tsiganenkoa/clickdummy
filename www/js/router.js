@@ -69,6 +69,16 @@ angular.module('myApp').config(function ($stateProvider, $urlRouterProvider) {
                 controller: 'IntroductionCtrl'
               }
             }
+          })
+
+          .state('app.categories', {
+            url: '/categories',
+            views: {
+              'menuContent': {
+                templateUrl: 'templates/categories.html',
+                controller: 'CategoriesCtrl'
+              }
+            }
           });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/start');

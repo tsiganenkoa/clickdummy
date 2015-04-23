@@ -43,6 +43,7 @@ ng-form {
 
 @import "partials/navbar";
 @import "partials/sidemenu";
+@import "partials/buttons";
 
-@import "partials/login_register";
-@import "partials/introduction";
+@import "pages/login_register";
+@import "pages/introduction";

@@ -5,6 +5,9 @@
   .slidebox{
     .slider-pager{
       bottom: 25px;
+      @include iphone4-and-lower{
+        bottom: 15px;
+      }
     }
     .intro-item{
       position: relative;
@@ -16,6 +19,9 @@
         padding: 40px 30px;
         text-align: center;
         line-height: 1.3;
+        @include iphone4-and-lower{
+          padding-top: 20px;
+        }
       }
       .image{
         margin: 0px 15px;
@@ -33,21 +39,8 @@
     width: 90%;
     left: 50%;
     margin-left: -45%;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 25px;
-    background-color: #82ca20;
-    border-color: #82ca20;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 0.95em;
-    font-family: 'OpenSans-Bold';
-    letter-spacing: 2px;
-    min-height: 0px;
-    @include iphone5-and-lower{
-      height: 40px;
-      border-radius: 20px;
-      line-height: 40px;
+    @include iphone4-and-lower{
+      bottom: 10px;
     }
   }
 }
