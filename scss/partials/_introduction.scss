@@ -1,0 +1,53 @@
+.page-introduction{
+  .scroll, .slidebox, .slider-slides, .slider-slide, .intro-item{
+    height: 100%;
+  }
+  .slidebox{
+    .slider-pager{
+      bottom: 25px;
+    }
+    .intro-item{
+      position: relative;
+      padding-top: 45px;
+      padding-bottom: 0px;
+      .tip-text{
+        position: absolute;
+        top: 0px;
+        padding: 40px 30px;
+        text-align: center;
+        line-height: 1.3;
+      }
+      .image{
+        margin: 0px 15px;
+        height: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+  .button.btn-start{
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    width: 90%;
+    left: 50%;
+    margin-left: -45%;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #82ca20;
+    border-color: #82ca20;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.95em;
+    font-family: 'OpenSans-Bold';
+    letter-spacing: 2px;
+    min-height: 0px;
+    @include iphone5-and-lower{
+      height: 40px;
+      border-radius: 20px;
+      line-height: 40px;
+    }
+  }
+}

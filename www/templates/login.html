@@ -1,25 +1,36 @@
-<ion-modal-view>
-  <ion-header-bar>
-    <h1 class="title">Login</h1>
-    <div class="buttons">
-      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+<ion-view view-title="Login with email" hide-nav-bar="true">
+  <ion-content class="page page-login">
+    <a href="#/start" class="back-link"><i class="icon ion-ios-arrow-thin-left"></i></a>
+    
+    <h2>YAAY or NAAY?</h2>
+    
+    <div class="description">
+      Register / Login with E-Mail
     </div>
-  </ion-header-bar>
-  <ion-content>
-    <form ng-submit="doLogin()">
-      <div class="list">
-        <label class="item item-input">
-          <span class="input-label">Username</span>
-          <input type="text" ng-model="loginData.username">
+    
+    <form>
+      <div class="list list-inset">
+        <label class="item item-input with-placeholder-icon">
+          <i class="icon ion-ios-email-outline placeholder-icon"></i>
+          <input type="text" placeholder="Email Address">
         </label>
-        <label class="item item-input">
-          <span class="input-label">Password</span>
-          <input type="password" ng-model="loginData.password">
+        <label class="item item-input with-placeholder-icon">
+          <i class="icon ion-ios-locked-outline placeholder-icon"></i>
+          <input type="text" placeholder="New/Existing Password">
         </label>
-        <label class="item">
-          <button class="button button-block button-positive" type="submit">Log in</button>
-        </label>
+        <div class="item item-error">
+          THIS IS AN example of an error MESSAGE*
+        </div>
       </div>
     </form>
+    
+    <a class="button button-transparent" href="#/complete-profile">Register / Login</a>
+    <div class="forgot-password">
+      <a href="#/forgot-password">Forgot Password?</a>
+    </div>
+    
+    <div class="login-tip">
+      By logging in you confirm you have read and agree <a target="_system">Terms and Conditions</a> & <a target="_system">Privacy Policy</a>
+    </div>
   </ion-content>
-</ion-modal-view>
+</ion-view>

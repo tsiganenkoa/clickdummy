@@ -148,7 +148,14 @@
     width: calc(33.3% - 6px); } }
 
 body {
-  color: #000000; }
+  color: #000000;
+  font-size: 18px; }
+  @media only screen and (max-width: 375px) {
+    body {
+      font-size: 16px; } }
+  @media only screen and (max-width: 320px) {
+    body {
+      font-size: 14px; } }
   body * {
     font-family: 'OpenSans-Regular'; }
     body * b, body * strong, body * h1, body * h2, body * h3, body * th {
@@ -180,3 +187,289 @@ ng-form {
       color: #ffffff; }
     .menu.menu-left .item .icon {
       color: #ccc; }
+
+.page-start, .page-login, .page-complete-profile, .page-forgot-password, .page-forgot-password-code {
+  padding: 28px;
+  background: url(../img/splash_background.jpg) center center no-repeat;
+  background-size: cover; }
+  @media only screen and (max-width: 320px) {
+    .page-start, .page-login, .page-complete-profile, .page-forgot-password, .page-forgot-password-code {
+      padding: 20px; } }
+  .page-start .back-link, .page-login .back-link, .page-complete-profile .back-link, .page-forgot-password .back-link, .page-forgot-password-code .back-link {
+    font-size: 2em; }
+  .page-start *, .page-login *, .page-complete-profile *, .page-forgot-password *, .page-forgot-password-code * {
+    color: #fff; }
+  .page-start h2, .page-login h2, .page-complete-profile h2, .page-forgot-password h2, .page-forgot-password-code h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0px; }
+  .page-start h3, .page-login h3, .page-complete-profile h3, .page-forgot-password h3, .page-forgot-password-code h3 {
+    font-size: 1.8em;
+    text-align: center;
+    margin: 0px; }
+  .page-start .description, .page-login .description, .page-complete-profile .description, .page-forgot-password .description, .page-forgot-password-code .description {
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 1.3;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+    .page-start .description em, .page-login .description em, .page-complete-profile .description em, .page-forgot-password .description em, .page-forgot-password-code .description em {
+      display: block;
+      font-size: 0.8em;
+      margin-top: 5px; }
+  .page-start .button, .page-login .button, .page-complete-profile .button, .page-forgot-password .button, .page-forgot-password-code .button {
+    width: 100%;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: transparent;
+    border-color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 0.95em;
+    font-family: 'OpenSans-Bold';
+    letter-spacing: 2px;
+    min-height: 0px; }
+    @media only screen and (max-width: 320px) {
+      .page-start .button, .page-login .button, .page-complete-profile .button, .page-forgot-password .button, .page-forgot-password-code .button {
+        height: 40px;
+        border-radius: 20px;
+        line-height: 40px; } }
+    .page-start .button.button-blue, .page-login .button.button-blue, .page-complete-profile .button.button-blue, .page-forgot-password .button.button-blue, .page-forgot-password-code .button.button-blue {
+      background-color: #43609c;
+      border-color: #43609c; }
+  .page-start form .list, .page-login form .list, .page-complete-profile form .list, .page-forgot-password form .list, .page-forgot-password-code form .list {
+    margin: 0px;
+    background-color: transparent; }
+    .page-start form .list .item, .page-login form .list .item, .page-complete-profile form .list .item, .page-forgot-password form .list .item, .page-forgot-password-code form .list .item {
+      background-color: transparent;
+      margin-bottom: 15px; }
+      .page-start form .list .item.item-error, .page-login form .list .item.item-error, .page-complete-profile form .list .item.item-error, .page-forgot-password form .list .item.item-error, .page-forgot-password-code form .list .item.item-error {
+        border: none;
+        padding: 0px;
+        text-transform: uppercase;
+        font-style: italic;
+        font-size: 0.75em;
+        letter-spacing: 1px;
+        text-align: center;
+        color: #f0e47c;
+        line-height: 1;
+        margin-top: 1px; }
+      .page-start form .list .item.item-input, .page-login form .list .item.item-input, .page-complete-profile form .list .item.item-input, .page-forgot-password form .list .item.item-input, .page-forgot-password-code form .list .item.item-input {
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 50px;
+        padding: 0px 30px;
+        position: relative;
+        border-radius: 25px;
+        font-size: 1em; }
+        .page-start form .list .item.item-input input, .page-login form .list .item.item-input input, .page-complete-profile form .list .item.item-input input, .page-forgot-password form .list .item.item-input input, .page-forgot-password-code form .list .item.item-input input {
+          height: 100%;
+          font-size: 1.05em;
+          padding: 0px 10px 0px 0px;
+          line-height: 1;
+          color: #fff; }
+          .page-start form .list .item.item-input input::-webkit-input-placeholder, .page-login form .list .item.item-input input::-webkit-input-placeholder, .page-complete-profile form .list .item.item-input input::-webkit-input-placeholder, .page-forgot-password form .list .item.item-input input::-webkit-input-placeholder, .page-forgot-password-code form .list .item.item-input input::-webkit-input-placeholder {
+            padding-top: 2px; }
+        .page-start form .list .item.item-input .icon.checkmark, .page-login form .list .item.item-input .icon.checkmark, .page-complete-profile form .list .item.item-input .icon.checkmark, .page-forgot-password form .list .item.item-input .icon.checkmark, .page-forgot-password-code form .list .item.item-input .icon.checkmark {
+          font-size: 2.5em;
+          position: absolute;
+          line-height: 50px; }
+          @media only screen and (max-width: 320px) {
+            .page-start form .list .item.item-input .icon.checkmark, .page-login form .list .item.item-input .icon.checkmark, .page-complete-profile form .list .item.item-input .icon.checkmark, .page-forgot-password form .list .item.item-input .icon.checkmark, .page-forgot-password-code form .list .item.item-input .icon.checkmark {
+              line-height: 40px; } }
+        .page-start form .list .item.item-input.with-placeholder-icon, .page-login form .list .item.item-input.with-placeholder-icon, .page-complete-profile form .list .item.item-input.with-placeholder-icon, .page-forgot-password form .list .item.item-input.with-placeholder-icon, .page-forgot-password-code form .list .item.item-input.with-placeholder-icon {
+          padding-right: 0px;
+          padding-left: 60px; }
+          .page-start form .list .item.item-input.with-placeholder-icon .placeholder-icon, .page-login form .list .item.item-input.with-placeholder-icon .placeholder-icon, .page-complete-profile form .list .item.item-input.with-placeholder-icon .placeholder-icon, .page-forgot-password form .list .item.item-input.with-placeholder-icon .placeholder-icon, .page-forgot-password-code form .list .item.item-input.with-placeholder-icon .placeholder-icon {
+            position: absolute;
+            left: 25px;
+            top: 5px;
+            font-size: 25px; }
+            .page-start form .list .item.item-input.with-placeholder-icon .placeholder-icon.ion-ios-email-outline, .page-login form .list .item.item-input.with-placeholder-icon .placeholder-icon.ion-ios-email-outline, .page-complete-profile form .list .item.item-input.with-placeholder-icon .placeholder-icon.ion-ios-email-outline, .page-forgot-password form .list .item.item-input.with-placeholder-icon .placeholder-icon.ion-ios-email-outline, .page-forgot-password-code form .list .item.item-input.with-placeholder-icon .placeholder-icon.ion-ios-email-outline {
+              font-size: 27px;
+              left: 22px;
+              top: 4px; }
+          @media only screen and (max-width: 320px) {
+            .page-start form .list .item.item-input.with-placeholder-icon, .page-login form .list .item.item-input.with-placeholder-icon, .page-complete-profile form .list .item.item-input.with-placeholder-icon, .page-forgot-password form .list .item.item-input.with-placeholder-icon, .page-forgot-password-code form .list .item.item-input.with-placeholder-icon {
+              padding-left: 45px; }
+              .page-start form .list .item.item-input.with-placeholder-icon .placeholder-icon, .page-login form .list .item.item-input.with-placeholder-icon .placeholder-icon, .page-complete-profile form .list .item.item-input.with-placeholder-icon .placeholder-icon, .page-forgot-password form .list .item.item-input.with-placeholder-icon .placeholder-icon, .page-forgot-password-code form .list .item.item-input.with-placeholder-icon .placeholder-icon {
+                left: 17px;
+                top: 4px;
+                font-size: 20px; }
+                .page-start form .list .item.item-input.with-placeholder-icon .placeholder-icon.ion-ios-email-outline, .page-login form .list .item.item-input.with-placeholder-icon .placeholder-icon.ion-ios-email-outline, .page-complete-profile form .list .item.item-input.with-placeholder-icon .placeholder-icon.ion-ios-email-outline, .page-forgot-password form .list .item.item-input.with-placeholder-icon .placeholder-icon.ion-ios-email-outline, .page-forgot-password-code form .list .item.item-input.with-placeholder-icon .placeholder-icon.ion-ios-email-outline {
+                  font-size: 22px;
+                  left: 16px;
+                  top: 3px; } }
+        @media only screen and (max-width: 320px) {
+          .page-start form .list .item.item-input, .page-login form .list .item.item-input, .page-complete-profile form .list .item.item-input, .page-forgot-password form .list .item.item-input, .page-forgot-password-code form .list .item.item-input {
+            height: 40px;
+            border-radius: 20px; } }
+  .page-start .login-tip, .page-login .login-tip, .page-complete-profile .login-tip, .page-forgot-password .login-tip, .page-forgot-password-code .login-tip {
+    font-size: 0.95em; }
+    .page-start .login-tip a, .page-login .login-tip a, .page-complete-profile .login-tip a, .page-forgot-password .login-tip a, .page-forgot-password-code .login-tip a {
+      text-decoration: underline; }
+  .page-start.page-start, .page-login.page-start, .page-complete-profile.page-start, .page-forgot-password.page-start, .page-forgot-password-code.page-start {
+    padding-top: 75px; }
+    .page-start.page-start .description, .page-login.page-start .description, .page-complete-profile.page-start .description, .page-forgot-password.page-start .description, .page-forgot-password-code.page-start .description {
+      margin-top: 50px;
+      margin-bottom: 60px; }
+      @media only screen and (max-width: 320px) {
+        .page-start.page-start .description, .page-login.page-start .description, .page-complete-profile.page-start .description, .page-forgot-password.page-start .description, .page-forgot-password-code.page-start .description {
+          margin-top: 25px;
+          margin-bottom: 35px; } }
+    @media only screen and (max-width: 320px) {
+      .page-start.page-start, .page-login.page-start, .page-complete-profile.page-start, .page-forgot-password.page-start, .page-forgot-password-code.page-start {
+        padding-top: 60px; } }
+    @media only screen and (min-width: 414px) {
+      .page-start.page-start, .page-login.page-start, .page-complete-profile.page-start, .page-forgot-password.page-start, .page-forgot-password-code.page-start {
+        padding-top: 100px; } }
+    .page-start.page-start .logo, .page-login.page-start .logo, .page-complete-profile.page-start .logo, .page-forgot-password.page-start .logo, .page-forgot-password-code.page-start .logo {
+      text-align: center; }
+      .page-start.page-start .logo img, .page-login.page-start .logo img, .page-complete-profile.page-start .logo img, .page-forgot-password.page-start .logo img, .page-forgot-password-code.page-start .logo img {
+        width: 155px; }
+      .page-start.page-start .logo h3, .page-login.page-start .logo h3, .page-complete-profile.page-start .logo h3, .page-forgot-password.page-start .logo h3, .page-forgot-password-code.page-start .logo h3 {
+        margin: 5px 0px 0px 0px; }
+    .page-start.page-start .facebook-tip, .page-login.page-start .facebook-tip, .page-complete-profile.page-start .facebook-tip, .page-forgot-password.page-start .facebook-tip, .page-forgot-password-code.page-start .facebook-tip {
+      padding: 0px 15px 0px 45px;
+      position: relative;
+      font-size: 0.95em; }
+      .page-start.page-start .facebook-tip .icon, .page-login.page-start .facebook-tip .icon, .page-complete-profile.page-start .facebook-tip .icon, .page-forgot-password.page-start .facebook-tip .icon, .page-forgot-password-code.page-start .facebook-tip .icon {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        margin-top: -12px;
+        font-size: 25px;
+        line-height: 20px; }
+    .page-start.page-start .login-tip, .page-login.page-start .login-tip, .page-complete-profile.page-start .login-tip, .page-forgot-password.page-start .login-tip, .page-forgot-password-code.page-start .login-tip {
+      margin-top: 15px; }
+      @media only screen and (min-width: 414px) {
+        .page-start.page-start .login-tip, .page-login.page-start .login-tip, .page-complete-profile.page-start .login-tip, .page-forgot-password.page-start .login-tip, .page-forgot-password-code.page-start .login-tip {
+          margin-top: 30px; } }
+  .page-start.page-login h2, .page-login.page-login h2, .page-complete-profile.page-login h2, .page-forgot-password.page-login h2, .page-forgot-password-code.page-login h2 {
+    margin-top: 30px; }
+    @media only screen and (min-width: 414px) {
+      .page-start.page-login h2, .page-login.page-login h2, .page-complete-profile.page-login h2, .page-forgot-password.page-login h2, .page-forgot-password-code.page-login h2 {
+        margin-top: 60px; } }
+  .page-start.page-login .description, .page-login.page-login .description, .page-complete-profile.page-login .description, .page-forgot-password.page-login .description, .page-forgot-password-code.page-login .description {
+    margin-top: 70px;
+    margin-bottom: 40px; }
+  .page-start.page-login .forgot-password, .page-login.page-login .forgot-password, .page-complete-profile.page-login .forgot-password, .page-forgot-password.page-login .forgot-password, .page-forgot-password-code.page-login .forgot-password {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 2px; }
+  .page-start.page-login .login-tip, .page-login.page-login .login-tip, .page-complete-profile.page-login .login-tip, .page-forgot-password.page-login .login-tip, .page-forgot-password-code.page-login .login-tip {
+    margin-top: 70px; }
+    @media only screen and (max-width: 320px) {
+      .page-start.page-login .login-tip, .page-login.page-login .login-tip, .page-complete-profile.page-login .login-tip, .page-forgot-password.page-login .login-tip, .page-forgot-password-code.page-login .login-tip {
+        margin-top: 30px; } }
+  .page-start.page-complete-profile h2, .page-login.page-complete-profile h2, .page-complete-profile.page-complete-profile h2, .page-forgot-password.page-complete-profile h2, .page-forgot-password-code.page-complete-profile h2 {
+    margin-top: 0px; }
+    @media only screen and (min-width: 414px) {
+      .page-start.page-complete-profile h2, .page-login.page-complete-profile h2, .page-complete-profile.page-complete-profile h2, .page-forgot-password.page-complete-profile h2, .page-forgot-password-code.page-complete-profile h2 {
+        margin-top: 20px; } }
+  .page-start.page-complete-profile .photobox, .page-login.page-complete-profile .photobox, .page-complete-profile.page-complete-profile .photobox, .page-forgot-password.page-complete-profile .photobox, .page-forgot-password-code.page-complete-profile .photobox {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0px auto 20px auto;
+    border: 1px dashed #fff;
+    text-align: center;
+    padding-top: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .page-start.page-complete-profile .photobox .icon, .page-login.page-complete-profile .photobox .icon, .page-complete-profile.page-complete-profile .photobox .icon, .page-forgot-password.page-complete-profile .photobox .icon, .page-forgot-password-code.page-complete-profile .photobox .icon {
+      font-size: 2em; }
+    .page-start.page-complete-profile .photobox label, .page-login.page-complete-profile .photobox label, .page-complete-profile.page-complete-profile .photobox label, .page-forgot-password.page-complete-profile .photobox label, .page-forgot-password-code.page-complete-profile .photobox label {
+      display: block; }
+    .page-start.page-complete-profile .photobox input[type=file], .page-login.page-complete-profile .photobox input[type=file], .page-complete-profile.page-complete-profile .photobox input[type=file], .page-forgot-password.page-complete-profile .photobox input[type=file], .page-forgot-password-code.page-complete-profile .photobox input[type=file] {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      opacity: 0px; }
+    .page-start.page-complete-profile .photobox.photo-selected .icon, .page-start.page-complete-profile .photobox.photo-selected label, .page-login.page-complete-profile .photobox.photo-selected .icon, .page-login.page-complete-profile .photobox.photo-selected label, .page-complete-profile.page-complete-profile .photobox.photo-selected .icon, .page-complete-profile.page-complete-profile .photobox.photo-selected label, .page-forgot-password.page-complete-profile .photobox.photo-selected .icon, .page-forgot-password.page-complete-profile .photobox.photo-selected label, .page-forgot-password-code.page-complete-profile .photobox.photo-selected .icon, .page-forgot-password-code.page-complete-profile .photobox.photo-selected label {
+      display: none; }
+  .page-start.page-complete-profile .description, .page-login.page-complete-profile .description, .page-complete-profile.page-complete-profile .description, .page-forgot-password.page-complete-profile .description, .page-forgot-password-code.page-complete-profile .description {
+    margin-top: 15px;
+    margin-bottom: 25px; }
+  .page-start.page-complete-profile form .list .item.item-input, .page-login.page-complete-profile form .list .item.item-input, .page-complete-profile.page-complete-profile form .list .item.item-input, .page-forgot-password.page-complete-profile form .list .item.item-input, .page-forgot-password-code.page-complete-profile form .list .item.item-input {
+    padding-right: 32px; }
+  @media only screen and (max-width: 320px) {
+    .page-start.page-complete-profile .photobox, .page-login.page-complete-profile .photobox, .page-complete-profile.page-complete-profile .photobox, .page-forgot-password.page-complete-profile .photobox, .page-forgot-password-code.page-complete-profile .photobox {
+      margin-bottom: 10px; }
+    .page-start.page-complete-profile .description, .page-login.page-complete-profile .description, .page-complete-profile.page-complete-profile .description, .page-forgot-password.page-complete-profile .description, .page-forgot-password-code.page-complete-profile .description {
+      margin-bottom: 15px; } }
+  .page-start.page-forgot-password h2, .page-start.page-forgot-password-code h2, .page-login.page-forgot-password h2, .page-login.page-forgot-password-code h2, .page-complete-profile.page-forgot-password h2, .page-complete-profile.page-forgot-password-code h2, .page-forgot-password.page-forgot-password h2, .page-forgot-password.page-forgot-password-code h2, .page-forgot-password-code.page-forgot-password h2, .page-forgot-password-code.page-forgot-password-code h2 {
+    margin-top: 50px; }
+    @media only screen and (min-width: 414px) {
+      .page-start.page-forgot-password h2, .page-start.page-forgot-password-code h2, .page-login.page-forgot-password h2, .page-login.page-forgot-password-code h2, .page-complete-profile.page-forgot-password h2, .page-complete-profile.page-forgot-password-code h2, .page-forgot-password.page-forgot-password h2, .page-forgot-password.page-forgot-password-code h2, .page-forgot-password-code.page-forgot-password h2, .page-forgot-password-code.page-forgot-password-code h2 {
+        margin-top: 80px; } }
+  .page-start.page-forgot-password .description em, .page-start.page-forgot-password-code .description em, .page-login.page-forgot-password .description em, .page-login.page-forgot-password-code .description em, .page-complete-profile.page-forgot-password .description em, .page-complete-profile.page-forgot-password-code .description em, .page-forgot-password.page-forgot-password .description em, .page-forgot-password.page-forgot-password-code .description em, .page-forgot-password-code.page-forgot-password .description em, .page-forgot-password-code.page-forgot-password-code .description em {
+    margin-top: 20px; }
+  .page-start.page-forgot-password.page-forgot-password-code .list .padding-line, .page-start.page-forgot-password-code.page-forgot-password-code .list .padding-line, .page-login.page-forgot-password.page-forgot-password-code .list .padding-line, .page-login.page-forgot-password-code.page-forgot-password-code .list .padding-line, .page-complete-profile.page-forgot-password.page-forgot-password-code .list .padding-line, .page-complete-profile.page-forgot-password-code.page-forgot-password-code .list .padding-line, .page-forgot-password.page-forgot-password.page-forgot-password-code .list .padding-line, .page-forgot-password.page-forgot-password-code.page-forgot-password-code .list .padding-line, .page-forgot-password-code.page-forgot-password.page-forgot-password-code .list .padding-line, .page-forgot-password-code.page-forgot-password-code.page-forgot-password-code .list .padding-line {
+    width: 45%;
+    margin: 25px auto;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.3); }
+    @media only screen and (max-width: 320px) {
+      .page-start.page-forgot-password.page-forgot-password-code .list .padding-line, .page-start.page-forgot-password-code.page-forgot-password-code .list .padding-line, .page-login.page-forgot-password.page-forgot-password-code .list .padding-line, .page-login.page-forgot-password-code.page-forgot-password-code .list .padding-line, .page-complete-profile.page-forgot-password.page-forgot-password-code .list .padding-line, .page-complete-profile.page-forgot-password-code.page-forgot-password-code .list .padding-line, .page-forgot-password.page-forgot-password.page-forgot-password-code .list .padding-line, .page-forgot-password.page-forgot-password-code.page-forgot-password-code .list .padding-line, .page-forgot-password-code.page-forgot-password.page-forgot-password-code .list .padding-line, .page-forgot-password-code.page-forgot-password-code.page-forgot-password-code .list .padding-line {
+        margin: 20px auto; } }
+  .page-start.page-forgot-password.page-forgot-password-code form .list .item.item-input, .page-start.page-forgot-password-code.page-forgot-password-code form .list .item.item-input, .page-login.page-forgot-password.page-forgot-password-code form .list .item.item-input, .page-login.page-forgot-password-code.page-forgot-password-code form .list .item.item-input, .page-complete-profile.page-forgot-password.page-forgot-password-code form .list .item.item-input, .page-complete-profile.page-forgot-password-code.page-forgot-password-code form .list .item.item-input, .page-forgot-password.page-forgot-password.page-forgot-password-code form .list .item.item-input, .page-forgot-password.page-forgot-password-code.page-forgot-password-code form .list .item.item-input, .page-forgot-password-code.page-forgot-password.page-forgot-password-code form .list .item.item-input, .page-forgot-password-code.page-forgot-password-code.page-forgot-password-code form .list .item.item-input {
+    margin-bottom: 25px; }
+    @media only screen and (max-width: 320px) {
+      .page-start.page-forgot-password.page-forgot-password-code form .list .item.item-input, .page-start.page-forgot-password-code.page-forgot-password-code form .list .item.item-input, .page-login.page-forgot-password.page-forgot-password-code form .list .item.item-input, .page-login.page-forgot-password-code.page-forgot-password-code form .list .item.item-input, .page-complete-profile.page-forgot-password.page-forgot-password-code form .list .item.item-input, .page-complete-profile.page-forgot-password-code.page-forgot-password-code form .list .item.item-input, .page-forgot-password.page-forgot-password.page-forgot-password-code form .list .item.item-input, .page-forgot-password.page-forgot-password-code.page-forgot-password-code form .list .item.item-input, .page-forgot-password-code.page-forgot-password.page-forgot-password-code form .list .item.item-input, .page-forgot-password-code.page-forgot-password-code.page-forgot-password-code form .list .item.item-input {
+        margin-bottom: 20px; } }
+    .page-start.page-forgot-password.page-forgot-password-code form .list .item.item-input input, .page-start.page-forgot-password-code.page-forgot-password-code form .list .item.item-input input, .page-login.page-forgot-password.page-forgot-password-code form .list .item.item-input input, .page-login.page-forgot-password-code.page-forgot-password-code form .list .item.item-input input, .page-complete-profile.page-forgot-password.page-forgot-password-code form .list .item.item-input input, .page-complete-profile.page-forgot-password-code.page-forgot-password-code form .list .item.item-input input, .page-forgot-password.page-forgot-password.page-forgot-password-code form .list .item.item-input input, .page-forgot-password.page-forgot-password-code.page-forgot-password-code form .list .item.item-input input, .page-forgot-password-code.page-forgot-password.page-forgot-password-code form .list .item.item-input input, .page-forgot-password-code.page-forgot-password-code.page-forgot-password-code form .list .item.item-input input {
+      text-align: center;
+      padding-right: 0px; }
+
+.page-introduction .scroll, .page-introduction .slidebox, .page-introduction .slider-slides, .page-introduction .slider-slide, .page-introduction .intro-item {
+  height: 100%; }
+.page-introduction .slidebox .slider-pager {
+  bottom: 25px; }
+.page-introduction .slidebox .intro-item {
+  position: relative;
+  padding-top: 45px;
+  padding-bottom: 0px; }
+  .page-introduction .slidebox .intro-item .tip-text {
+    position: absolute;
+    top: 0px;
+    padding: 40px 30px;
+    text-align: center;
+    line-height: 1.3; }
+  .page-introduction .slidebox .intro-item .image {
+    margin: 0px 15px;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+.page-introduction .button.btn-start {
+  display: none;
+  position: absolute;
+  bottom: 20px;
+  width: 90%;
+  left: 50%;
+  margin-left: -45%;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #82ca20;
+  border-color: #82ca20;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.95em;
+  font-family: 'OpenSans-Bold';
+  letter-spacing: 2px;
+  min-height: 0px; }
+  @media only screen and (max-width: 320px) {
+    .page-introduction .button.btn-start {
+      height: 40px;
+      border-radius: 20px;
+      line-height: 40px; } }

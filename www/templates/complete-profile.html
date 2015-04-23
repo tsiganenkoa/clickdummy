@@ -1,0 +1,45 @@
+<ion-view view-title="Register" hide-nav-bar="true">
+  <ion-content class="page page-complete-profile">
+    
+    <h2>YAAY or NAAY?</h2>
+    
+    <div class="description">
+      Congratulations!
+      <em>Please complete your profile!</em>
+    </div>
+    
+    <form>
+      
+      <div class="photobox">
+        <input type="file" id="profile_photo_r" onchange="onProfilePhotoSelected(this)" accept="image/*">
+        <i class="icon ion-ios-camera-outline"></i>
+        <label>Add Photo</label>
+      </div>
+      
+      <div class="list list-inset">
+        <label class="item item-input">
+          <input type="text" placeholder="Name" ng-model="data.name">
+          <i class="icon ion-ios-checkmark-empty checkmark" ng-show="data.name"></i>
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="Gender" ng-model="data.gender">
+          <i class="icon ion-ios-checkmark-empty checkmark" ng-show="data.gender"></i>
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="Birth Date" ng-model="data.birthday">
+          <i class="icon ion-ios-checkmark-empty checkmark" ng-show="data.birthday"></i>
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="Code we sent by e-mail" ng-model="data.code">
+          <i class="icon ion-ios-checkmark-empty checkmark" ng-show="data.code"></i>
+        </label>
+        <div class="item item-error">
+          THIS IS AN example of an error MESSAGE*
+        </div>
+      </div>
+    </form>
+    
+    <a class="button button-transparent" href="#/introduction">Let's get started</a>
+    
+  </ion-content>
+</ion-view>

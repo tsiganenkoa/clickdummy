@@ -1,0 +1,319 @@
+.page-start, 
+.page-login, 
+.page-complete-profile,
+.page-forgot-password,
+.page-forgot-password-code{
+  padding: 28px;
+  @include iphone5-and-lower{
+    padding: 20px;
+  }
+  background: url(../img/splash_background.jpg) center center no-repeat;
+  background-size: cover;
+
+  .back-link{
+    font-size: 2em;
+  }
+  *{
+    color: #fff;
+  }
+  h2{
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0px;
+  }
+  h3{
+    font-size: 1.8em;
+    text-align: center;
+    margin: 0px;
+  }
+
+  .description{
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 1.3;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    em{
+      display: block;
+      font-size: 0.8em;
+      margin-top: 5px;
+    }
+  }
+
+  .button{
+    width: 100%;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: transparent;
+    border-color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 0.95em;
+    font-family: 'OpenSans-Bold';
+    letter-spacing: 2px;
+    min-height: 0px;
+    @include iphone5-and-lower{
+      height: 40px;
+      border-radius: 20px;
+      line-height: 40px;
+    }
+    &.button-blue{
+      background-color: #43609c;
+      border-color: #43609c;
+    }
+  }
+
+  form{
+    .list{
+      margin: 0px;
+      background-color: transparent;
+      .item{
+        background-color: transparent;
+        margin-bottom: 15px;
+        &.item-error{
+          border: none;
+          padding: 0px;
+          text-transform: uppercase;
+          font-style: italic;
+          font-size: 0.75em;
+          letter-spacing: 1px;
+          text-align: center;
+          color: #f0e47c;
+          line-height: 1;
+          margin-top: 1px;
+        }
+        &.item-input{
+          background-color: rgba(0, 0, 0, 0.3);
+          height: 50px;
+          padding: 0px 30px;
+          position: relative;
+          border-radius: 25px;
+          font-size: 1em;
+          input{
+            height: 100%;
+            font-size: 1.05em;
+            padding: 0px 10px 0px 0px;
+            line-height: 1;
+            color: #fff;
+            &::-webkit-input-placeholder {
+              padding-top: 2px;
+            }
+          }
+          .icon.checkmark{
+            font-size: 2.5em;
+            position: absolute;
+            line-height: 50px;
+            @include iphone5-and-lower{
+              line-height: 40px;
+            }
+          }
+          &.with-placeholder-icon{
+            padding-right: 0px;
+            padding-left: 60px;
+            .placeholder-icon{
+              position: absolute;
+              left: 25px;
+              top: 5px;
+              font-size: 25px;
+              &.ion-ios-email-outline{
+                font-size: 27px;
+                left: 22px;
+                top: 4px;
+              }
+            }
+            @include iphone5-and-lower{
+              padding-left: 45px;
+              .placeholder-icon{
+                left: 17px;
+                top: 4px;
+                font-size: 20px;
+                &.ion-ios-email-outline{
+                  font-size: 22px;
+                  left: 16px;
+                  top: 3px;
+                }
+              }
+            }
+          }
+          @include iphone5-and-lower{
+            height: 40px;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .login-tip{
+    font-size: 0.95em;
+    a{
+      text-decoration: underline;
+    }
+  }
+
+  &.page-start{
+    .description{
+      margin-top: 50px;
+      margin-bottom: 60px;
+      @include iphone5-and-lower{
+        margin-top: 25px;
+        margin-bottom: 35px;
+      }
+    }
+    padding-top: 75px;
+    @include iphone5-and-lower{
+      padding-top: 60px;
+    }
+    @include iphone6p-and-higher{
+      padding-top: 100px;
+    }
+    .logo{
+      text-align: center;
+      img{
+        width: 155px;
+      }
+      h3{
+        margin: 5px 0px 0px 0px;
+      }
+    }
+    .facebook-tip{
+      padding: 0px 15px 0px 45px;
+      position: relative;
+      font-size: 0.95em;
+      .icon{
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        margin-top: -12px;
+        font-size: 25px;
+        line-height: 20px;
+      }
+    }
+    .login-tip{
+      margin-top: 15px;
+      @include iphone6p-and-higher{
+        margin-top: 30px;
+      }
+    }
+  }
+
+  &.page-login{
+    h2{
+      margin-top: 30px;
+      @include iphone6p-and-higher{
+        margin-top: 60px;
+      }
+    }
+    .description{
+      margin-top: 70px;
+      margin-bottom: 40px;
+    }
+    .forgot-password{
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 0.8em;
+      letter-spacing: 2px;
+    }
+    .login-tip{
+      margin-top: 70px;
+      @include iphone5-and-lower{
+        margin-top: 30px;
+      }
+    }
+  }
+
+  &.page-complete-profile{
+    h2{
+      margin-top: 0px;
+      @include iphone6p-and-higher{
+        margin-top: 20px;
+      }
+    }
+    .photobox{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 0px auto 20px auto;
+      border: 1px dashed #fff;
+      text-align: center;
+      padding-top: 20px;
+      background-color: rgba(0, 0, 0, 0.3);
+      position: relative;
+      overflow: hidden;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      .icon{
+        font-size: 2em;
+      }
+      label{
+        display: block;
+      }
+      input[type=file]{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        opacity: 0px;
+      }
+      &.photo-selected{
+        .icon, label{
+          display: none;
+        }
+      }
+    }
+    .description{
+      margin-top: 15px;
+      margin-bottom: 25px;
+    }
+    form .list .item.item-input{
+      padding-right: 32px;
+    }
+    @include iphone5-and-lower{
+      .photobox{
+        margin-bottom: 10px;
+      }
+      .description{
+        margin-bottom: 15px;
+      }
+    }
+  }
+  
+  &.page-forgot-password, &.page-forgot-password-code{
+    h2{
+      margin-top: 50px;
+      @include iphone6p-and-higher{
+        margin-top: 80px;
+      }
+    }
+    .description{
+      em{
+        margin-top: 20px;
+      }
+    }
+    &.page-forgot-password-code{
+      .list .padding-line{
+        width: 45%;
+        margin: 25px auto;
+        height: 2px;
+        background-color: rgba(255, 255, 255, 0.3);
+        @include iphone5-and-lower{
+          margin: 20px auto;
+        }
+      }
+      form .list .item.item-input{
+        margin-bottom: 25px;
+        @include iphone5-and-lower{
+          margin-bottom: 20px;
+        }
+        input{
+          text-align: center;
+          padding-right: 0px;
+        }
+      }
+    }
+  }
+}

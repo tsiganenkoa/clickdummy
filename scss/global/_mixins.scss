@@ -26,3 +26,27 @@
     @content;
   }
 }
+
+@mixin iphone5-and-lower {
+  @media only screen and (max-width: 320px){
+    @content;
+  }
+}
+
+@mixin iphone6-and-lower {
+  @media only screen and (max-width: 375px){
+    @content;
+  }
+}
+
+@mixin iphone6p-and-lower {
+  @media only screen and (max-width: 414px){
+    @content;
+  }
+}
+
+@mixin iphone6p-and-higher {
+  @media only screen and (min-width: 414px){
+    @content;
+  }
+}

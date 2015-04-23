@@ -1,14 +1,34 @@
-angular.module('myApp.controllers')
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
-})
+angular.module('myApp.controllers').controller('StartCtrl', function ($scope, $location) {
+  $scope.loginWithEmail = function () {
+    $location.path('/login');
+  };
+}).controller('CompleteProfileCtrl', function ($scope, $window) {
+  $window.onProfilePhotoSelected = function (fileElem) {
+    var FR = new FileReader();
+    FR.onload = function (e) {
+      $(fileElem).closest('.photobox')
+              .css('background-image', 'url(' + e.target.result + ')')
+              .addClass('photo-selected');
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+    };
+    FR.readAsDataURL(fileElem.files[0]);
+  };
+}).controller('IntroductionCtrl', function ($scope, $stateParams) {
+  $scope.introductions = [
+    {text: 'Browse different categories to vote for other and upload own pics!'},
+    {text: 'All categories run for one week (Monday to Sunday)!'},
+    {text: 'Find new pics of friends, followers, locals and other interesting users!'},
+    {text: 'Vote YAAY by swiping left! Follow friends and interesting users!'},
+    {text: 'Upload yourself to collect YAAYs and get more popular!'}
+  ];
+
+  $scope.slideHasChanged = function (index) {
+    if (index === $scope.introductions.length - 1) {
+      $('.page-introduction .slider-pager').hide(100);
+      $('.page-introduction .btn-start').show(150);
+    }else{
+      $('.page-introduction .slider-pager').show(100);
+      $('.page-introduction .btn-start').hide(100);
+    }
+  };
 });

@@ -7,8 +7,15 @@
 
 body{
   color: $my-app-textcolor;
+  font-size: 18px;
+  @include iphone6-and-lower{
+    font-size: 16px;
+  }
+  @include iphone5-and-lower{
+    font-size: 14px;
+  }
   *{
-    font-family: 'OpenSans-Regular'; 
+    font-family: 'OpenSans-Regular';
     b, strong, h1, h2, h3, th{
       font-family: 'OpenSans-Bold';
     }
@@ -36,3 +43,6 @@ ng-form {
 
 @import "partials/navbar";
 @import "partials/sidemenu";
+
+@import "partials/login_register";
+@import "partials/introduction";
