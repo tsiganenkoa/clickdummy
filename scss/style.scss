@@ -13,7 +13,7 @@ body{
     font-size: 14px;
   }
   *{
-    font-family: 'OpenSans-Regular';
+    font-family: 'OpenSans-Regular', sans-serif;
     b, strong, h1, h2, h3, th{
       font-family: 'OpenSans-Bold';
     }
@@ -48,3 +48,4 @@ ng-form {
 @import "pages/login_register";
 @import "pages/introduction";
 @import "pages/categories";
+@import "pages/cards";

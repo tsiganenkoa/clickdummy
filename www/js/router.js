@@ -1,6 +1,7 @@
 'use strict';
 
 angular.module('myApp').config(function ($stateProvider, $urlRouterProvider) {
+  
   $stateProvider
           .state('app', {
             url: '',
@@ -77,6 +78,16 @@ angular.module('myApp').config(function ($stateProvider, $urlRouterProvider) {
               'menuContent': {
                 templateUrl: 'templates/categories.html',
                 controller: 'CategoriesCtrl'
+              }
+            }
+          })
+
+          .state('app.cards', {
+            url: '/cards/:categoryId',
+            views: {
+              'menuContent': {
+                templateUrl: 'templates/cards.html',
+                controller: 'CardsCtrl'
               }
             }
           });

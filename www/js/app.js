@@ -1,6 +1,6 @@
-angular.module('myApp', ['ionic', 'myApp.controllers', 'myApp.filters', 'myApp.services', 'myApp.directives'])
+angular.module('myApp', ['ionic', 'ionic.contrib.ui.tinderCards', 'myApp.controllers', 'myApp.filters', 'myApp.services', 'myApp.directives'])
 
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform, $ionicConfig) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -12,4 +12,6 @@ angular.module('myApp', ['ionic', 'myApp.controllers', 'myApp.filters', 'myApp.s
       StatusBar.styleDefault();
     }
   });
+  
+  $ionicConfig.views.swipeBackEnabled(false);
 });

@@ -38,6 +38,7 @@
     bottom: 20px;
     width: 90%;
     left: 50%;
+    z-index: 12;
     margin-left: -45%;
     @include iphone4-and-lower{
       bottom: 10px;

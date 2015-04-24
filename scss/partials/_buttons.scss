@@ -1,6 +1,6 @@
 .page .button{
   height: 50px;
-  line-height: 50px;
+  line-height: 46px;
   border-radius: 25px;
   background-color: transparent;
   border-color: #fff;
@@ -10,18 +10,25 @@
   font-family: 'OpenSans-Bold';
   letter-spacing: 2px;
   min-height: 0px;
+  border-width: 2px;
   @include iphone5-and-lower{
     height: 40px;
     border-radius: 20px;
-    line-height: 40px;
+    line-height: 36px;
   }
   &.button-blue{
     background-color: #43609c;
     border-color: #43609c;
+    &:active{
+      background-color: #43609c;
+    }
   }
   &.button-green{
     background-color: #82ca20;
     border-color: #82ca20;
+    &:active{
+      background-color: #82ca20;
+    }
   }
   &:hover{
     color: #fff;

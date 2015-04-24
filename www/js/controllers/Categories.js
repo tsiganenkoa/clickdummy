@@ -1,50 +1,50 @@
 angular.module('myApp.controllers').controller('CategoriesCtrl', function ($scope, $location) {
-  $scope.loginWithEmail = function () {
-    $location.path('/login');
-  };
-  
   $scope.categories = [
     {
       id: 1,
       image: 'img/examples/1.jpg',
       cup: 'gold',
-      category: 'pink',
+      color: 'pink',
       name: 'Most Beautiful Pic of the week'
     },
     {
       id: 2,
       image: 'img/examples/2.jpg',
       cup: 'silver',
-      category: 'blue',
+      color: 'blue',
       name: 'Hello Dolley?'
     },
     {
       id: 3,
       image: 'img/examples/3.jpg',
       cup: 'bronze',
-      category: 'blue',
+      color: 'blue',
       name: 'Stylish Pic?'
     },
     {
       id: 4,
       image: 'img/examples/4.jpg',
       cup: 'gold',
-      category: 'grey',
+      color: 'grey',
       name: 'Most Beautiful Pic of the week'
     },
     {
       id: 5,
       image: 'img/examples/5.jpg',
       cup: 'gold',
-      category: 'blue',
+      color: 'blue',
       name: 'Most Beautiful Pic of the week'
     },
     {
       id: 6,
       image: 'img/examples/6.jpg',
       cup: 'bronze',
-      category: 'grey',
+      color: 'grey',
       name: 'Stylish Pic?'
     }
   ];
+  
+  $scope.showPictures = function(categoryId){
+    $location.path('/cards/' + categoryId);
+  };
 });
