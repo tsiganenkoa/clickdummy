@@ -7,33 +7,6 @@
     @include iphone5-and-lower{
       bottom: 60px;
     }
-    .photo-list-item{
-      .rank-circle{
-        position: absolute;
-        left: 10px;
-        top: 10px;
-        border-radius: 50%;
-        width: 70px;
-        height: 70px;
-        text-align: center;
-        display: flex;
-        display: -webkit-flex;
-        align-items: center;
-        -webkit-align-items: center;
-        background-color: rgba(0, 0, 0, 0.5);
-        color: #fff;
-        font-size: 12px;;
-        .rank-circle-inner{
-          display: block;
-          margin: 0px auto;
-          .cup{
-            width: 19px;
-            height: 20px;
-            margin: 0px auto;
-          }
-        }
-      }
-    }
   }
   &.bar-footer{
     height: 70px;
@@ -61,6 +34,14 @@
         width: 86px;
         margin-left: -40px;
         bottom: -15px;
+      }
+      input[type=file]{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        opacity: 0px;
       }
     }
     .left-area, .right-area{

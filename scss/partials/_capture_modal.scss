@@ -1,0 +1,153 @@
+.modal.capture-modal{
+  .title{
+    color: #fff;
+    font-size: 1.5em;
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .image{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 80px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .bottom-bar{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    .button.button-clear{
+      color: #000;
+      min-height: 40px;
+      min-width: 40px;
+      .icon:before{
+        font-size: 60px;
+      }
+    }
+  } 
+
+  .edit{
+    .list{
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      left: 15px;
+      .item.item-input.with-placeholder-icon{
+        padding-right: 40px;
+        padding-left: 40px;
+        margin-bottom: 0px;
+        @include iphone5-and-lower{
+          padding-right: 25px;
+          padding-left: 25px;
+        }
+      }
+      input{
+        text-align: center;
+        padding-right: 0px;
+      }
+    }
+    .bottom-bar{
+      height: 80px;
+      .bar-inner{
+        display: table;
+        width: 100%;
+        height: 100%;
+        > div{
+          display: table-cell;
+          text-align: center;
+          vertical-align: middle;
+        }
+        .left, .right{
+          width: 22%;
+          @include iphone5-and-lower{
+            width: 20%;
+          }
+        }
+        .image-action{
+          width: 55px;
+          height: 55px;
+          display: inline-block;
+          border-radius: 50%;
+          background: url(../img/image-magic0.png) center center no-repeat;
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+  }
+
+  .completed{
+    .bottom-bar{
+      height: 145px;
+      
+      .notification{
+        text-align: center;
+        padding: 20px 0px 10px 0px;
+      }
+      
+      .buttons.social {
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        -webkit-align-items: center;
+        justify-content: center;
+        position: relative;
+        .apply-button{
+          position: absolute;
+          right: 20px;
+          top: 5px;
+        }
+      }
+
+      .social .circle {
+        border-radius: 50%;
+        width: 3em;
+        height: 3em;
+        color: #ffffff;
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        -webkit-align-items: center;
+
+        &.whatsapp {
+          background: #82ca20;
+          margin-right: 0.65em;
+        }
+
+        &.facebook {
+          background: #43609c;
+        }
+
+        &:active {
+          opacity: 0.5;
+        }
+
+        .icon {
+          margin: auto;
+          font-size: 1.6em;
+          text-align: center;
+        }
+      }
+    }
+    .image{
+      bottom: 145px;
+      .comment-text{
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        text-align: center;
+        color: #fff;
+        bottom: 20px;
+        font-size: 1.5em;
+      }
+    }
+  }
+
+}

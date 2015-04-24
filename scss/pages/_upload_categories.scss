@@ -1,0 +1,13 @@
+.page-upload-categories{
+  &.bar-subheader{
+    text-align: center;
+    height: 55px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  &.page{
+    &.has-subheader{
+      top: 99px;
+    }
+  }
+}

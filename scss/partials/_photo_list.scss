@@ -71,5 +71,30 @@
         }
       }
     }
+    .rank-circle{
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      text-align: center;
+      display: flex;
+      display: -webkit-flex;
+      align-items: center;
+      -webkit-align-items: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      font-size: 12px;;
+      .rank-circle-inner{
+        display: block;
+        margin: 0px auto;
+        .cup{
+          width: 19px;
+          height: 20px;
+          margin: 0px auto;
+        }
+      }
+    }
   }
 }

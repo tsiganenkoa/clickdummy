@@ -28,7 +28,10 @@
       <cup type="'bronze'" fill="0.9"></cup>
       YAAYs: <span>8,032</span>
     </div>
-    <button class="camera-button"><i class="icon ion-ios-camera-outline"></i></button>
+    <button class="camera-button">
+      <input type="file" id="profile_photo_r" onchange="onCategoryPhotoSelected(this)" accept="image/*">
+      <i class="icon ion-ios-camera-outline"></i>
+    </button>
     <div class="right-area">
       Followers: <span>1,032</span>
     </div>

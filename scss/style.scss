@@ -41,11 +41,14 @@ ng-form {
 
 @import "partials/navbar";
 @import "partials/sidemenu";
+@import "partials/forms";
 @import "partials/buttons";
 @import "partials/cup";
 @import "partials/photo_list";
+@import "partials/capture_modal";
 
 @import "pages/login_register";
 @import "pages/introduction";
 @import "pages/categories";
+@import "pages/upload_categories";
 @import "pages/cards";

@@ -1,4 +1,4 @@
-angular.module('myApp.controllers').controller('CategoriesCtrl', function ($scope, $location, $ionicModal, $window) {
+angular.module('myApp.controllers').controller('UploadCategoriesCtrl', function ($scope, $rootScope, $window, CaptureModalService) {
   $scope.categories = [
     {
       id: 1,
@@ -43,18 +43,16 @@ angular.module('myApp.controllers').controller('CategoriesCtrl', function ($scop
       name: 'Stylish Pic?'
     }
   ];
-
-  $scope.showPictures = function (categoryId) {
-    $location.path('/cards/' + categoryId);
+  
+  $scope.goBack = function(){
+    $window.history.back();
   };
-
-  $window.onCategoryPhotoSelected = function (fileElem) {
-    var FR = new FileReader();
-    FR.onload = function (e) {
-      $scope.$apply(function () {
-        $scope.openUploadCategories(e.target.result);
-      });
-    };
-    FR.readAsDataURL(fileElem.files[0]);
+  
+  $scope.selectCategory = function(category){
+    CaptureModalService.open(category, $rootScope.takenCardPhoto, function(){
+      $scope.goBack();
+    });
   };
+  
+
 });

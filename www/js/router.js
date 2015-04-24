@@ -83,11 +83,22 @@ angular.module('myApp').config(function ($stateProvider, $urlRouterProvider) {
           })
 
           .state('app.cards', {
+            cache: false,
             url: '/cards/:categoryId',
             views: {
               'menuContent': {
                 templateUrl: 'templates/cards.html',
                 controller: 'CardsCtrl'
+              }
+            }
+          })
+          
+          .state('app.upload-categories', {
+            url: '/upload-categories',
+            views: {
+              'menuContent': {
+                templateUrl: 'templates/upload-categories.html',
+                controller: 'UploadCategoriesCtrl'
               }
             }
           });
