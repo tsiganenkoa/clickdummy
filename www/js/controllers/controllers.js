@@ -2,7 +2,27 @@ angular.module('myApp.controllers').controller('StartCtrl', function ($scope, $l
   $scope.loginWithEmail = function () {
     $location.path('/login');
   };
-}).controller('CompleteProfileCtrl', function ($scope, $window) {
+  
+}).controller('CompleteProfileCtrl', function ($scope, $window, $ionicPopover) {
+  $scope.data = {};
+  
+  /** == filters menu == */
+  $scope.genderPopover = null;
+  $ionicPopover.fromTemplateUrl('gender-popover', {
+    scope: $scope
+  }).then(function (popover) {
+    $scope.genderPopover = popover;
+  });
+
+  $scope.$on('$destroy', function () {
+    $scope.genderPopover.remove();
+  });
+
+  $scope.onSelectGender = function (gender, e) {
+    $scope.data.gender = gender;
+    $scope.genderPopover.hide();
+  };
+
   $window.onProfilePhotoSelected = function (fileElem) {
     var FR = new FileReader();
     FR.onload = function (e) {
@@ -26,7 +46,7 @@ angular.module('myApp.controllers').controller('StartCtrl', function ($scope, $l
     if (index === $scope.introductions.length - 1) {
       $('.page-introduction .slider-pager').hide(100);
       $('.page-introduction .btn-start').show(150);
-    }else{
+    } else {
       $('.page-introduction .slider-pager').show(100);
       $('.page-introduction .btn-start').hide(100);
     }

@@ -37,3 +37,8 @@
     background-color: transparent;
   }
 }
+.camera-button{
+  &:active{
+    background-color: #a1a1a1!important;
+  }
+}

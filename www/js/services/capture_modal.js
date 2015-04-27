@@ -6,7 +6,7 @@ angular.module('myApp.services')
   
           var options = {};
           
-          options.category = {id: 1, name: 'Most Beautilful Pic of the week?'};
+          options.category = {id: '', name: ''};
 
           // Create the login modal that we will use later
           $ionicModal.fromTemplateUrl('templates/capture-modal.html', {
@@ -27,6 +27,8 @@ angular.module('myApp.services')
               options.category = category;
               options.photoContent = photoContent;
               options.callback = callback;
+              options.comment = '';
+              options.commentVal = '';
               modal.show();
             },
             getOptions: function(){

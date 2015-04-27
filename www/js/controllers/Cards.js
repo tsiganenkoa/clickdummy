@@ -88,6 +88,7 @@ angular.module('myApp.controllers').controller('CardsCtrl', function ($scope, $s
   };
   
   function partialMoveCardPosition(elem, from, to, amt){
+    amt = Math.abs(amt);
     var lastCardWidth = 97, lastCardTop = 16;
     var backCardWidth = 92.2, backCardTop = 9;
     var newval = {width: 0, marginTop: 0};

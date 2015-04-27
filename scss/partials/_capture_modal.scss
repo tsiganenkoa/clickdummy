@@ -93,16 +93,12 @@
       }
       
       .buttons.social {
-        display: flex;
-        display: -webkit-flex;
-        align-items: center;
-        -webkit-align-items: center;
-        justify-content: center;
         position: relative;
+        text-align: center;
         .apply-button{
           position: absolute;
           right: 20px;
-          top: 5px;
+          top: 0px;
         }
       }
 
@@ -111,10 +107,13 @@
         width: 3em;
         height: 3em;
         color: #ffffff;
-        display: flex;
+/*        display: flex;
         display: -webkit-flex;
         align-items: center;
-        -webkit-align-items: center;
+        -webkit-align-items: center;*/
+        display: inline-block;
+        line-height: 3em;
+        text-align: center;
 
         &.whatsapp {
           background: #82ca20;
