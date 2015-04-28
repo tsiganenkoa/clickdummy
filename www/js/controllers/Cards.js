@@ -92,24 +92,44 @@ angular.module('myApp.controllers').controller('CardsCtrl', function ($scope, $s
     var lastCardWidth = 97, lastCardTop = 16;
     var backCardWidth = 92.2, backCardTop = 9;
     var newval = {width: 0, marginTop: 0};
-    if (amt >= 1) {
+    /*if (amt >= 1) {
       newval = angular.copy(to);
     } else if (amt <= 0) {
       newval = angular.copy(from);
     } else {
       newval.width = from.width + (to.width - from.width) * amt;
       newval.marginTop = from.marginTop + (to.marginTop - from.marginTop) * amt;
+    }*/
+    if (amt === 0) {
+      newval = angular.copy(from);
+    } else {
+      newval = angular.copy(to);
     }
+    changeCardPosition(elem, newval);
+  }
+  
+  function changeCardPosition(elem, position){
     $(elem).css({
-      width: newval.width + '%',
-      marginLeft: (-1 * newval.width / 2 + 0.1) + '%',
-      marginTop: newval.marginTop + 'px'
+      width: position.width + '%',
+      marginLeft: (-1 * position.width / 2 + 0.1) + '%',
+      marginTop: position.marginTop + 'px'
     });
   }
+  
+  var cardPositions = [
+    {width: 87, marginTop: 3},
+    {width: 92.2, marginTop: 9},
+    {width: 97, marginTop: 16}
+  ];
 
   $scope.cardPartialSwipe = function (amt) {
-    partialMoveCardPosition('td-card.card-0', {width: 87, marginTop: 3}, {width: 92.2, marginTop: 9}, amt);
-    partialMoveCardPosition('td-card.card-1', {width: 92.2, marginTop: 9}, {width: 97, marginTop: 16}, amt);
+    partialMoveCardPosition('td-card.card-0', cardPositions[0], cardPositions[1], amt);
+    partialMoveCardPosition('td-card.card-1', cardPositions[1], cardPositions[2], amt);
+  };
+  
+  $scope.cardSnapBack = function(){
+    changeCardPosition('td-card.card-0', cardPositions[0]);
+    changeCardPosition('td-card.card-1', cardPositions[1]);
   };
 
   $scope.showLimitedAlert = function () {

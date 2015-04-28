@@ -62,7 +62,7 @@
         margin-bottom: 35px;
       }
     }
-    padding-top: 75px;
+    padding-top: 65px;
     @include iphone5-and-lower{
       padding-top: 60px;
     }
@@ -92,7 +92,7 @@
       }
     }
     .login-tip{
-      margin-top: 15px;
+      margin-top: 25px;
       @include iphone6p-and-higher{
         margin-top: 30px;
       }

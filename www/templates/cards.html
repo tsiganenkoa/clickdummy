@@ -10,6 +10,7 @@
         on-swipe-left="cardSwipedLeft($index)"
         on-swipe-right="cardSwipedRight($index)"
         on-partial-swipe="cardPartialSwipe(amt)"
+        on-snap-back="cardSnapBack()"
         class="card-{{$index}}"
         >
         <div class="image">
@@ -17,8 +18,8 @@
           <div class="gradient gradient-top {{card.color}}"></div>
           <div class="gradient gradient-bottom"></div>
 
-          <div class="no-text">NAAY <div class="left-arrow"></div></div>
-          <div class="yes-text"><div class="right-arrow"></div> YAAY</div>
+          <div class="no-text">YAAY <div class="left-arrow"></div></div>
+          <div class="yes-text"><div class="right-arrow"></div> NAAY</div>
 
           <div class="info">
             <img class="circle avatar" ng-src="{{card.avatar}}" />

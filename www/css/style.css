@@ -549,7 +549,7 @@ ion-content.has-header {
     .page-start .login-tip a, .page-login .login-tip a, .page-complete-profile .login-tip a, .page-forgot-password .login-tip a, .page-forgot-password-code .login-tip a {
       text-decoration: underline; }
   .page-start.page-start, .page-login.page-start, .page-complete-profile.page-start, .page-forgot-password.page-start, .page-forgot-password-code.page-start {
-    padding-top: 75px; }
+    padding-top: 65px; }
     .page-start.page-start .description, .page-login.page-start .description, .page-complete-profile.page-start .description, .page-forgot-password.page-start .description, .page-forgot-password-code.page-start .description {
       margin-top: 50px;
       margin-bottom: 60px; }
@@ -581,7 +581,7 @@ ion-content.has-header {
         font-size: 25px;
         line-height: 20px; }
     .page-start.page-start .login-tip, .page-login.page-start .login-tip, .page-complete-profile.page-start .login-tip, .page-forgot-password.page-start .login-tip, .page-forgot-password-code.page-start .login-tip {
-      margin-top: 15px; }
+      margin-top: 25px; }
       @media only screen and (min-width: 414px) {
         .page-start.page-start .login-tip, .page-login.page-start .login-tip, .page-complete-profile.page-start .login-tip, .page-forgot-password.page-start .login-tip, .page-forgot-password-code.page-start .login-tip {
           margin-top: 30px; } }
@@ -977,25 +977,25 @@ ion-content.has-header {
       height: 0.7em; }
   .page-cards.page .yes-text {
     top: 22%;
-    right: 2%;
-    color: #82ca20;
+    right: 6%;
+    color: #ff002d;
     padding: 16px 28px 16px 27px;
-    border: 3px solid #82ca20;
+    border: 3px solid #ff002d;
     transform: rotate(4deg); }
     .page-cards.page .yes-text div {
-      background-image: url("../img/arrow_right_256_82ca20.png");
+      background-image: url("../img/arrow_right_256_ff002d.png");
       float: right;
       margin-left: 11px; }
   .page-cards.page .no-text {
     top: 29%;
-    left: 4%;
-    color: #ff002d;
+    left: 8%;
+    color: #82ca20;
     padding: 15px 31px 15px 29px;
-    border: 3px solid #ff002d;
+    border: 3px solid #82ca20;
     transform: rotate(-3deg);
     opacity: 0; }
     .page-cards.page .no-text div {
-      background-image: url("../img/arrow_left_256_ff002d.png");
+      background-image: url("../img/arrow_left_256_82ca20.png");
       float: left;
       margin-right: 11px; }
   .page-cards.page .tooltip {

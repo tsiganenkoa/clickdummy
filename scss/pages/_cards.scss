@@ -246,13 +246,13 @@
 
     .yes-text {
       top: 22%;
-      right: 2%;
-      color: #82ca20;
+      right: 6%;
+      color: #ff002d;
       padding: 16px 28px 16px 27px;
-      border: 3px solid #82ca20;
+      border: 3px solid #ff002d;
       transform: rotate(4deg);
       div {
-        background-image: url("../img/arrow_right_256_82ca20.png");
+        background-image: url("../img/arrow_right_256_ff002d.png");
         float: right;
         margin-left: 11px;
       }
@@ -261,14 +261,14 @@
 
     .no-text {
       top: 29%;
-      left: 4%;
-      color: #ff002d;
+      left: 8%;
+      color: #82ca20;
       padding: 15px 31px 15px 29px;
-      border: 3px solid #ff002d;
+      border: 3px solid #82ca20;
       transform: rotate(-3deg);
       opacity: 0;
       div {
-        background-image: url("../img/arrow_left_256_ff002d.png");
+        background-image: url("../img/arrow_left_256_82ca20.png");
         float: left;
         margin-right: 11px;
       }
