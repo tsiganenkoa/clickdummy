@@ -148,6 +148,8 @@ ng-form {
   background-image: none !important; }
   .nav-bar-block .bar.bar-stable .button.button-icon:before {
     font-size: 25px; }
+  .nav-bar-block .bar.bar-stable .button.button-icon.ion-ios-close-empty:before {
+    font-size: 35px; }
   .nav-bar-block .bar.bar-stable .button.back-button .icon.ion-ios-arrow-thin-left:before {
     /*        font-size: 35px;*/ }
   .nav-bar-block .bar.bar-stable .button.back-button .back-text {
@@ -158,7 +160,12 @@ ng-form {
     color: #26292e;
     line-height: 35px; }
 
-ion-content.has-header {
+.has-header {
+  top: 35px; }
+  .has-header.has-subheader {
+    top: 79px; }
+
+.bar-subheader {
   top: 35px; }
 
 .menu.menu-left {
@@ -419,6 +426,22 @@ ion-content.has-header {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
+  .modal.capture-modal .image .gradient {
+    position: absolute;
+    width: 100%;
+    height: 55%; }
+    .modal.capture-modal .image .gradient.gradient-top {
+      top: 0;
+      background: -webkit-linear-gradient(bottom, transparent, rgba(0, 0, 0, 0.5));
+      background: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5));
+      background: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.5));
+      background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.5)); }
+    .modal.capture-modal .image .gradient.gradient-bottom {
+      bottom: 0;
+      background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), transparent);
+      background: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), transparent);
+      background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), transparent);
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent); }
 .modal.capture-modal .bottom-bar {
   position: absolute;
   left: 0px;
@@ -896,7 +919,8 @@ ion-content.has-header {
   font-size: 1.2em;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis; }
+  text-overflow: ellipsis;
+  line-height: 34px; }
 .page-cards.page {
   bottom: 70px;
   /*td-card.card-2 .info,

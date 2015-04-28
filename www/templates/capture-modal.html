@@ -1,6 +1,8 @@
 <ion-modal-view class="capture-modal" ng-controller="CaptureModalCtrl">
   <ion-content scroll="false" class="{{areaShown}}">
     <div class="image" style="background-image: url({{data.photoContent}});">
+      <div class="gradient gradient-top"></div>
+      <div class="gradient gradient-bottom"></div>
       <div class="title">{{data.category.name}}</div>
       <div class="list list-inset form-skin1" ng-if="areaShown === 'edit'">
         <label class="item item-input with-placeholder-icon">

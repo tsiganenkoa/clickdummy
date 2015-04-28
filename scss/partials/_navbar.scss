@@ -9,6 +9,9 @@
       &:before{
         font-size: 25px;
       }
+      &.ion-ios-close-empty:before{
+        font-size: 35px;
+      }
     }
     .button.back-button{
       .icon.ion-ios-arrow-thin-left:before{
@@ -26,6 +29,12 @@
     }
   }
 }
-ion-content.has-header{
+.has-header{
+  top: 35px;
+  &.has-subheader{
+    top: 79px;
+  }
+}
+.bar-subheader{
   top: 35px;
 }
