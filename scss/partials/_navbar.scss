@@ -5,6 +5,10 @@
     padding-bottom: 0px;
     background-color: #ffffff;
     background-image: none!important;
+    .button{
+      line-height: 24px;
+      min-height: 25px;
+    }
     .button.button-icon{
       &:before{
         font-size: 25px;
@@ -26,6 +30,7 @@
       font-family: 'OpenSans-Bold';
       color: #26292e;
       line-height: 35px;
+      height: 35px;
     }
   }
 }

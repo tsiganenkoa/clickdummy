@@ -1,0 +1,110 @@
+.page-myresults{
+  h3{
+    text-transform: uppercase;
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+  .states{
+    margin-top: 1.8em;
+    text-align: center;
+    .counters{
+      > div{
+        display: inline-block;
+        font-size: 1.1em;
+        label{
+          font-family: 'OpenSans-Bold';
+          font-size: inherit;
+        }
+        &.left-space{
+          padding-right: 16px;
+        }
+        &.right-space{
+          padding-left: 16px;
+        }
+      }
+    }
+    .cups{
+      margin: 1.5em 0;
+      .cup-item{
+        display: inline-block;
+        &.bronze{
+          color: #ae6643;
+        }
+        &.silver{
+          color: #909090;
+        }
+        &.gold{
+          color: #d49a00;
+        }
+        .cup{
+          margin-top: 3px;
+          height: 60px;
+          width: 57px;
+        }
+        margin: 0px 15px;
+      }
+    }
+    .rankings{
+      p{
+        color: #585858;
+        margin-bottom: 0.5em;
+      }
+    }
+  }
+  .week-item{
+    h3{
+      line-height: 1;
+      margin: 0.5em 0px;
+    }
+    .photo-list-item{
+      .btn {
+        position: absolute;
+        top: 10px;
+        width: 3em;
+        height: 3em;
+        color: #ffffff;
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        -webkit-align-items: center;
+
+        &:active {
+          opacity: 0.7;
+        }
+
+        &.yaays{
+          background: rgba(0, 0, 0, 0.5);
+          left: 10px;
+          > div{
+            display: block;
+            line-height: 1;
+            text-align: center;
+            font-size: 0.70em;
+            width: 100%;
+            strong{
+              font-size: 1.2em;
+            }
+          }
+        }
+        
+        &.whatsapp {
+          background: #82ca20;
+          left: 50%;
+          margin-left: -1.5em;
+        }
+
+        &.facebook {
+          background: #43609c;
+          right: 10px;
+        }
+
+        .icon {
+          margin: auto;
+          font-size: 1.6em;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

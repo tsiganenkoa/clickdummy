@@ -111,6 +111,16 @@ angular.module('myApp').config(function ($stateProvider, $urlRouterProvider) {
                 controller: 'ProfileCtrl'
               }
             }
+          })
+          
+          .state('app.myresults', {
+            url: '/myresults',
+            views: {
+              'menuContent': {
+                templateUrl: 'templates/myresults.html',
+                controller: 'MyResultsCtrl'
+              }
+            }
           });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/start');
