@@ -137,6 +137,9 @@ ng-form {
 .page {
   background-color: #ffffff; }
 
+.circle {
+  border-radius: 50%; }
+
 .nav-bar-block .bar.bar-stable {
   height: 35px;
   padding-top: 0px;
@@ -246,7 +249,7 @@ ion-content.has-header {
 .popover.gender-popover {
   height: 125px; }
 
-.page .button {
+.page .button, .modal .button {
   height: 50px;
   line-height: 46px;
   border-radius: 25px;
@@ -260,23 +263,23 @@ ion-content.has-header {
   min-height: 0px;
   border-width: 2px; }
   @media only screen and (max-width: 320px) {
-    .page .button {
+    .page .button, .modal .button {
       height: 40px;
       border-radius: 20px;
       line-height: 36px; } }
-  .page .button.button-blue {
+  .page .button.button-blue, .modal .button.button-blue {
     background-color: #43609c;
     border-color: #43609c; }
-    .page .button.button-blue:active {
+    .page .button.button-blue:active, .modal .button.button-blue:active {
       background-color: #43609c; }
-  .page .button.button-green {
+  .page .button.button-green, .modal .button.button-green {
     background-color: #82ca20;
     border-color: #82ca20; }
-    .page .button.button-green:active {
+    .page .button.button-green:active, .modal .button.button-green:active {
       background-color: #82ca20; }
-  .page .button:hover {
+  .page .button:hover, .modal .button:hover {
     color: #fff; }
-  .page .button:active {
+  .page .button:active, .modal .button:active {
     background-color: transparent; }
 
 .camera-button:active {
@@ -510,6 +513,99 @@ ion-content.has-header {
     color: #fff;
     bottom: 20px;
     font-size: 1.5em; }
+
+.modal.full-picture-modal .image {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+.modal.full-picture-modal .info {
+  position: absolute;
+  top: 0;
+  padding: 15px 7px 0 10px;
+  width: 100%; }
+  .modal.full-picture-modal .info .avatar {
+    border: 2px solid #ffffff;
+    width: 42px;
+    float: left; }
+  .modal.full-picture-modal .info img.avatar {
+    opacity: 1; }
+  .modal.full-picture-modal .info .user-info {
+    padding-left: 8px;
+    float: left;
+    color: #ffffff; }
+  .modal.full-picture-modal .info .name {
+    font-size: 1.05em; }
+  .modal.full-picture-modal .info .counters {
+    font-size: 0.68em;
+    padding-top: 0.15em;
+    white-space: nowrap; }
+    .modal.full-picture-modal .info .counters .space-right {
+      padding-right: 5px; }
+  .modal.full-picture-modal .info .follow-button {
+    font-size: 0.85em;
+    float: right;
+    border-radius: 25px;
+    color: #ffffff;
+    padding: 9px 15px;
+    height: auto;
+    line-height: 1;
+    letter-spacing: 0px; }
+    .modal.full-picture-modal .info .follow-button.followed {
+      background-color: #fff;
+      color: #000; }
+    .modal.full-picture-modal .info .follow-button:active {
+      opacity: 0.5; }
+.modal.full-picture-modal .copyright {
+  position: absolute;
+  font-size: 9px;
+  font-weight: 400;
+  bottom: 21px;
+  right: 10px;
+  color: #ccc;
+  white-space: nowrap; }
+.modal.full-picture-modal .comment {
+  position: absolute;
+  bottom: 3.25em;
+  font-size: 1.2em;
+  color: #ffffff;
+  width: 100%;
+  padding: 0 20px 0 20px;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-size: 1.2em; }
+.modal.full-picture-modal .gradient {
+  position: absolute;
+  width: 100%;
+  height: 200px; }
+.modal.full-picture-modal .gradient-top {
+  top: 0;
+  background: -webkit-linear-gradient(bottom, transparent, rgba(0, 0, 0, 0.9));
+  background: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.9));
+  background: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.9));
+  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.9)); }
+  .modal.full-picture-modal .gradient-top.pink {
+    background: -webkit-linear-gradient(bottom, rgba(150, 122, 220, 0), rgba(150, 122, 220, 0.9));
+    background: -o-linear-gradient(top, rgba(150, 122, 220, 0), rgba(150, 122, 220, 0.9));
+    background: -moz-linear-gradient(top, rgba(150, 122, 220, 0), rgba(150, 122, 220, 0.9));
+    background: linear-gradient(to top, rgba(150, 122, 220, 0), rgba(150, 122, 220, 0.9)); }
+  .modal.full-picture-modal .gradient-top.blue {
+    background: -webkit-linear-gradient(bottom, rgba(2, 144, 255, 0), rgba(2, 144, 255, 0.9));
+    background: -o-linear-gradient(top, rgba(2, 144, 255, 0), rgba(2, 144, 255, 0.9));
+    background: -moz-linear-gradient(top, rgba(2, 144, 255, 0), rgba(2, 144, 255, 0.9));
+    background: linear-gradient(to top, rgba(2, 144, 255, 0), rgba(2, 144, 255, 0.9)); }
+.modal.full-picture-modal .gradient-bottom {
+  bottom: 0px;
+  width: 100%;
+  height: 150px;
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.9), transparent);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.9), transparent);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.9), transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent); }
 
 .page-start, .page-login, .page-complete-profile, .page-forgot-password, .page-forgot-password-code {
   padding: 28px;
@@ -801,8 +897,6 @@ ion-content.has-header {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
-.page-cards .circle {
-  border-radius: 50%; }
 .page-cards.page {
   bottom: 70px;
   /*td-card.card-2 .info,
@@ -893,16 +987,14 @@ ion-content.has-header {
     padding-left: 8px;
     float: left;
     color: #ffffff; }
-  .page-cards.page td-card .info .user-info .name {
+  .page-cards.page td-card .info .name {
     font-size: 1.05em; }
-  .page-cards.page td-card .info .user-info .counters {
+  .page-cards.page td-card .info .counters {
     font-size: 0.68em;
     padding-top: 0.15em;
     white-space: nowrap; }
-  .page-cards.page .counters .space-right {
-    padding-right: 0.55em; }
-  .page-cards.page td-card.card-2 .counters .space-right {
-    padding-right: 5px; }
+    .page-cards.page td-card .info .counters .space-right {
+      padding-right: 5px; }
   .page-cards.page td-card .info .follow-button {
     font-size: 0.85em;
     float: right;
@@ -915,8 +1007,8 @@ ion-content.has-header {
     .page-cards.page td-card .info .follow-button.followed {
       background-color: #fff;
       color: #000; }
-  .page-cards.page td-card .info .follow-button:active {
-    opacity: 0.5; }
+    .page-cards.page td-card .info .follow-button:active {
+      opacity: 0.5; }
   .page-cards.page td-card .comment {
     position: absolute;
     bottom: 3.25em;
@@ -1102,3 +1194,33 @@ ion-content.has-header {
       font-weight: 400; }
     .page-cards.bar-footer .stats .counters em {
       font-weight: 700; }
+
+.page-profile .info {
+  padding: 15px 20px; }
+  .page-profile .info .avatar {
+    width: 40px;
+    float: left; }
+  .page-profile .info .user-info {
+    padding-left: 8px;
+    float: left; }
+  .page-profile .info .name {
+    font-size: 1.05em;
+    white-space: nowrap; }
+  .page-profile .info .counters {
+    font-size: 0.68em;
+    white-space: nowrap; }
+    .page-profile .info .counters .space-right {
+      padding-right: 5px; }
+  .page-profile .info .button.follow-button {
+    font-size: .85em;
+    float: right;
+    border-radius: 25px;
+    color: #26292e;
+    padding: 9px 15px;
+    height: auto;
+    line-height: 1;
+    letter-spacing: 0;
+    border-color: #26292e; }
+    .page-profile .info .button.follow-button.followed {
+      opacity: 0.7;
+      background-color: #ccc; }

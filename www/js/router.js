@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('myApp').config(function ($stateProvider, $urlRouterProvider) {
-  
+
   $stateProvider
           .state('app', {
             url: '',
@@ -92,13 +92,23 @@ angular.module('myApp').config(function ($stateProvider, $urlRouterProvider) {
               }
             }
           })
-          
+
           .state('app.upload-categories', {
             url: '/upload-categories',
             views: {
               'menuContent': {
                 templateUrl: 'templates/upload-categories.html',
                 controller: 'UploadCategoriesCtrl'
+              }
+            }
+          })
+
+          .state('app.profile', {
+            url: '/profile/:profileId',
+            views: {
+              'menuContent': {
+                templateUrl: 'templates/profile.html',
+                controller: 'ProfileCtrl'
               }
             }
           });

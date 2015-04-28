@@ -1,0 +1,39 @@
+.page-profile{
+  .info{
+    padding: 15px 20px;
+    .avatar {
+      width: 40px;
+      float: left;
+    }
+    .user-info {
+      padding-left: 8px;
+      float: left;
+    }
+    .name {
+      font-size: 1.05em;
+      white-space: nowrap;
+    }
+    .counters {
+      font-size: 0.68em;
+      white-space: nowrap;
+      .space-right {
+        padding-right: 5px;
+      }
+    }
+    .button.follow-button{
+      font-size: .85em;
+      float: right;
+      border-radius: 25px;
+      color: #26292e;
+      padding: 9px 15px;
+      height: auto;
+      line-height: 1;
+      letter-spacing: 0;
+      border-color: #26292e;
+      &.followed{
+        opacity: 0.7;
+        background-color: #ccc;
+      }
+    }
+  }
+}

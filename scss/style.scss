@@ -39,6 +39,11 @@ ng-form {
   background-color: $my-app-backcolor;
 }
 
+.circle {
+  border-radius: 50%;
+}
+
+
 @import "partials/navbar";
 @import "partials/sidemenu";
 @import "partials/forms";
@@ -46,9 +51,11 @@ ng-form {
 @import "partials/cup";
 @import "partials/photo_list";
 @import "partials/capture_modal";
+@import "partials/full_picture_modal";
 
 @import "pages/login_register";
 @import "pages/introduction";
 @import "pages/categories";
 @import "pages/upload_categories";
 @import "pages/cards";
+@import "pages/profile";

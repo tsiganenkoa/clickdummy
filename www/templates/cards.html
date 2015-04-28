@@ -11,8 +11,7 @@
         on-swipe-right="cardSwipedRight($index)"
         on-partial-swipe="cardPartialSwipe(amt)"
         on-snap-back="cardSnapBack()"
-        class="card-{{$index}}"
-        >
+        class="card-{{$index}}">
         <div class="image">
           <div class="img" style="background-image: url({{card.image}})"></div>
           <div class="gradient gradient-top {{card.color}}"></div>
@@ -21,17 +20,17 @@
           <div class="no-text">YAAY <div class="left-arrow"></div></div>
           <div class="yes-text"><div class="right-arrow"></div> NAAY</div>
 
-          <div class="info">
-            <img class="circle avatar" ng-src="{{card.avatar}}" />
+          <a class="info" href="#/profile/{{card.profile.id}}">
+            <img class="circle avatar" ng-src="{{card.profile.avatar}}" />
             <div class="user-info">
-              <div class="name">{{card.name}}</div>
+              <div class="name">{{card.profile.name}}</div>
               <div class="counters">
-                <span class="space-right">{{card.yaays}} YAAYs</span>
-                <span>{{card.followers}} Follower</span>
+                <span class="space-right">{{card.profile.yaays}} YAAYs</span>
+                <span>{{card.profile.followers}} Follower</span>
               </div>
             </div>
             <button class="button follow-button" ng-click="toggleFollow(card)" ng-class="{followed:card.followed}">{{card.followed?'Unfollow':'Follow'}}</button>
-          </div>
+          </a>
 
           <div class="comment">
             {{card.comment}}

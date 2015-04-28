@@ -1,0 +1,108 @@
+.modal.full-picture-modal{
+  .image {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .info{
+    position: absolute;
+    top: 0;
+    padding: 15px 7px 0 10px;
+    width: 100%;
+    .avatar {
+      border: 2px solid #ffffff;
+      width: 42px;
+      float: left;
+    }
+    img.avatar {
+      opacity: 1;
+    }
+    .user-info {
+      padding-left: 8px;
+      float: left;
+      color: #ffffff;
+    }
+    .name {
+      font-size: 1.05em;
+    }
+    .counters {
+      font-size: 0.68em;
+      padding-top: 0.15em;
+      white-space: nowrap;
+      .space-right {
+        padding-right: 5px;
+      }
+    }
+    .follow-button {
+      font-size: 0.85em;
+      float: right;
+      border-radius: 25px;
+      color: #ffffff;
+      padding: 9px 15px;
+      height: auto;
+      line-height: 1;
+      letter-spacing: 0px;
+      &.followed{
+        background-color: #fff;
+        color: #000;
+      }
+      &:active {
+        opacity: 0.5;
+      }
+    }
+  }
+  .copyright {
+    position: absolute;
+    font-size: 9px;
+    font-weight: 400;
+    bottom: 21px;
+    right: 10px;
+    color: #ccc;
+    white-space: nowrap;
+  }
+  .comment {
+    position: absolute;
+    bottom: 3.25em;
+    font-size: 1.2em;
+    color: #ffffff;
+    width: 100%;
+    padding: 0 20px 0 20px;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  .gradient {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+  }
+  .gradient-top {
+    top: 0;
+    @include vertical-gradient($category-gradient-grey-end, $category-gradient-grey-start);
+    &.pink{
+      @include vertical-gradient($category-gradient-pink-end, $category-gradient-pink-start);
+    }
+    &.blue{
+      @include vertical-gradient($category-gradient-blue-end, $category-gradient-blue-start);
+    }
+  }
+  .gradient-bottom {
+    bottom: 0px;
+    width: 100%;
+    height: 150px;
+
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+  }
+
+
+
+}

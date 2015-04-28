@@ -3,56 +3,74 @@ angular.module('myApp.controllers').controller('CardsCtrl', function ($scope, $s
     {
       image: 'img/examples/1.jpg',
       comment: '',
-      name: 'John Doe',
-      yaays: 115,
-      followers: 120,
-      avatar: 'img/avatars/1.jpg',
-      color: 'pink'
+      color: 'pink',
+      profile: {
+        id: '1',
+        name: 'John Doe',
+        yaays: 115,
+        followers: 120,
+        avatar: 'img/avatars/1.jpg'
+      }
     },
     {
       image: 'img/examples/2.jpg',
       comment: 'Sunglasses!',
-      name: 'Megan Fox',
-      yaays: 215,
-      followers: 240,
-      avatar: 'img/avatars/1.jpg',
-      color: 'blue'
+      color: 'blue',
+      profile: {
+        id: '2',
+        name: 'Megan Fox',
+        yaays: 215,
+        followers: 240,
+        avatar: 'img/avatars/1.jpg'
+      }
     },
     {
       image: 'img/examples/3.jpg',
       comment: 'Yaaay!',
-      name: 'Lady Gaga',
-      yaays: 542,
-      followers: 12,
-      avatar: 'img/avatars/1.jpg',
-      color: 'grey'
+      color: 'grey',
+      profile: {
+        id: '3',
+        name: 'Lady Gaga',
+        yaays: 542,
+        followers: 12,
+        avatar: 'img/avatars/1.jpg'
+      }
     },
     {
       image: 'img/examples/4.jpg',
       comment: 'Hello world!',
-      name: 'Kate White',
-      yaays: 123,
-      followers: 709,
-      avatar: 'img/avatars/1.jpg',
-      color: 'blue'
+      color: 'blue',
+      profile: {
+        id: '4',
+        name: 'Kate White',
+        yaays: 123,
+        followers: 709,
+        avatar: 'img/avatars/1.jpg'
+      }
     },
     {
       image: 'img/examples/5.jpg',
       comment: '',
-      name: 'John Doe',
-      yaays: 115,
-      followers: 120,
-      avatar: 'img/avatars/1.jpg',
-      color: 'pink'
+      color: 'pink',
+      profile: {
+        id: '5',
+        name: 'John Doe',
+        yaays: 115,
+        followers: 120,
+        avatar: 'img/avatars/1.jpg'
+      }
     },
     {
       image: 'img/examples/6.jpg',
       comment: 'Yaaay!',
-      name: 'Lady Gaga',
-      yaays: 542,
-      followers: 12,
-      avatar: 'img/avatars/1.jpg',
-      color: 'grey'
+      color: 'grey',
+      profile: {
+        id: '6',
+        name: 'Lady Gaga',
+        yaays: 542,
+        followers: 12,
+        avatar: 'img/avatars/1.jpg'
+      }
     }
   ];
   var CARDS_NUMBER = 3;
@@ -86,20 +104,20 @@ angular.module('myApp.controllers').controller('CardsCtrl', function ($scope, $s
   $scope.cardSwipedRight = function (index) {
     console.log('RIGHT SWIPE');
   };
-  
-  function partialMoveCardPosition(elem, from, to, amt){
+
+  function partialMoveCardPosition(elem, from, to, amt) {
     amt = Math.abs(amt);
     var lastCardWidth = 97, lastCardTop = 16;
     var backCardWidth = 92.2, backCardTop = 9;
     var newval = {width: 0, marginTop: 0};
     /*if (amt >= 1) {
-      newval = angular.copy(to);
-    } else if (amt <= 0) {
-      newval = angular.copy(from);
-    } else {
-      newval.width = from.width + (to.width - from.width) * amt;
-      newval.marginTop = from.marginTop + (to.marginTop - from.marginTop) * amt;
-    }*/
+     newval = angular.copy(to);
+     } else if (amt <= 0) {
+     newval = angular.copy(from);
+     } else {
+     newval.width = from.width + (to.width - from.width) * amt;
+     newval.marginTop = from.marginTop + (to.marginTop - from.marginTop) * amt;
+     }*/
     if (amt === 0) {
       newval = angular.copy(from);
     } else {
@@ -107,15 +125,15 @@ angular.module('myApp.controllers').controller('CardsCtrl', function ($scope, $s
     }
     changeCardPosition(elem, newval);
   }
-  
-  function changeCardPosition(elem, position){
+
+  function changeCardPosition(elem, position) {
     $(elem).css({
       width: position.width + '%',
       marginLeft: (-1 * position.width / 2 + 0.1) + '%',
       marginTop: position.marginTop + 'px'
     });
   }
-  
+
   var cardPositions = [
     {width: 87, marginTop: 3},
     {width: 92.2, marginTop: 9},
@@ -126,8 +144,8 @@ angular.module('myApp.controllers').controller('CardsCtrl', function ($scope, $s
     partialMoveCardPosition('td-card.card-0', cardPositions[0], cardPositions[1], amt);
     partialMoveCardPosition('td-card.card-1', cardPositions[1], cardPositions[2], amt);
   };
-  
-  $scope.cardSnapBack = function(){
+
+  $scope.cardSnapBack = function () {
     changeCardPosition('td-card.card-0', cardPositions[0]);
     changeCardPosition('td-card.card-1', cardPositions[1]);
   };
@@ -150,7 +168,7 @@ angular.module('myApp.controllers').controller('CardsCtrl', function ($scope, $s
   $window.onCardPhotoSelected = function (fileElem) {
     var FR = new FileReader();
     FR.onload = function (e) {
-      CaptureModalService.open({id: $stateParams.categoryId, name: 'Most Beatiful Pics'}, e.target.result, function(){
+      CaptureModalService.open({id: $stateParams.categoryId, name: 'Most Beatiful Pics'}, e.target.result, function () {
         alert('Photo has been added to this category.');
       });
     };
