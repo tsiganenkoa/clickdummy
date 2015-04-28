@@ -112,13 +112,68 @@ angular.module('myApp').config(function ($stateProvider, $urlRouterProvider) {
               }
             }
           })
-          
+
           .state('app.myresults', {
             url: '/myresults',
             views: {
               'menuContent': {
                 templateUrl: 'templates/myresults.html',
                 controller: 'MyResultsCtrl'
+              }
+            }
+          })
+
+          .state('app.winners', {
+            url: '/winners',
+            views: {
+              'menuContent': {
+                templateUrl: 'templates/winners.html',
+                controller: 'WinnersCtrl'
+              }
+            }
+          })
+
+          .state('app.settings', {
+            url: '/settings',
+            views: {
+              'menuContent': {
+                templateUrl: 'templates/settings.html'
+              }
+            }
+          })
+
+          .state('app.settings-legal', {
+            url: '/settings-legal',
+            views: {
+              'menuContent': {
+                templateUrl: 'templates/settings-legal.html'
+              }
+            }
+          })
+
+          .state('app.settings-recommend', {
+            url: '/settings-recommend',
+            views: {
+              'menuContent': {
+                templateUrl: 'templates/settings-recommend.html'
+              }
+            }
+          })
+
+          .state('app.privacy', {
+            url: '/privacy',
+            views: {
+              'menuContent': {
+                templateUrl: 'templates/privacy.html'
+              }
+            }
+          })
+
+          .state('app.toc', {
+            url: '/toc',
+            views: {
+              'menuContent': {
+                templateUrl: 'templates/toc.html'
               }
             }
           });

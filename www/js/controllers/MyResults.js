@@ -1,4 +1,4 @@
-angular.module('myApp.controllers').controller('MyResultsCtrl', function ($scope, $location, $ionicModal, $window) {
+angular.module('myApp.controllers').controller('MyResultsCtrl', function ($scope, $location, $ionicModal) {
   $scope.categories = [
     {
       id: 1,
@@ -15,5 +15,4 @@ angular.module('myApp.controllers').controller('MyResultsCtrl', function ($scope
       name: 'Hello Dolley?'
     }
   ];
-
 });

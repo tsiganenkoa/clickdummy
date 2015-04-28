@@ -1,4 +1,4 @@
-angular.module('myApp.controllers').controller('UploadCategoriesCtrl', function ($scope, $rootScope, $window, CaptureModalService) {
+angular.module('myApp.controllers').controller('UploadCategoriesCtrl', function ($scope, $rootScope, CaptureModalService) {
   $scope.categories = [
     {
       id: 1,
@@ -43,10 +43,6 @@ angular.module('myApp.controllers').controller('UploadCategoriesCtrl', function 
       name: 'Stylish Pic?'
     }
   ];
-  
-  $scope.goBack = function(){
-    $window.history.back();
-  };
   
   $scope.selectCategory = function(category){
     CaptureModalService.open(category, $rootScope.takenCardPhoto, function(){
