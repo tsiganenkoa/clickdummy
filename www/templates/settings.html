@@ -1,18 +1,18 @@
 <ion-view view-title="Settings" hide-back-button="true">
   <ion-nav-buttons side="left">
-    <button class="button button-icon button-clear ion-ios-close-empty" ng-click="goBack()"></button>
+    <a class="button button-icon button-clear ion-ios-close-empty" href="#/categories"></a>
   </ion-nav-buttons>
 
   <ion-content class="page page-settings">
     
-    <div class="info">
+    <a class="info" href="#/change-profile">
       <img src="img/avatars/1.jpg" class="circle profile-pic">
       <div class="user-name">Max</div>
-      <a class="change-profile" href="#/change-profile"><i class="fa fa-pencil"></i> Change profile</a>
-    </div>
+      <span class="change-profile"><i class="fa fa-pencil"></i> Change profile</span>
+    </a>
     
     <div class="list">
-      <a class="item item-icon-left" href="#/introduction">
+      <a class="item item-icon-left" href="#/introduction?from_settings=1">
         <i class="icon ion-ios-book-outline"></i>
         Introduction
         <p>This is how YAAY or NAAY? works</p>

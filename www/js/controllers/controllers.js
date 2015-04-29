@@ -33,7 +33,8 @@ angular.module('myApp.controllers').controller('StartCtrl', function ($scope, $l
     };
     FR.readAsDataURL(fileElem.files[0]);
   };
-}).controller('IntroductionCtrl', function ($scope, $stateParams) {
+}).controller('IntroductionCtrl', function ($scope, $stateParams, $location) {
+  $scope.fromSettings = $location.search().from_settings;
   $scope.introductions = [
     {text: 'Browse different categories to vote for other and upload own pics!'},
     {text: 'All categories run for one week (Monday to Sunday)!'},

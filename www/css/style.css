@@ -1356,8 +1356,10 @@ ng-form {
   font-size: 25px; }
 
 .page-settings .info {
+  max-width: 250px;
+  display: block;
   text-align: center;
-  margin: 2.5em 0; }
+  margin: 2.5em auto; }
   .page-settings .info .profile-pic {
     width: 5.5em;
     height: 5.5em; }
@@ -1428,18 +1430,22 @@ ng-form {
     .page-settings-legal .list.bottom .item {
       text-align: center; }
 
+.page-settings-recommend .tip {
+  text-align: center;
+  font-size: 1.05em;
+  margin: 1em;
+  line-height: 1.3; }
 .page-settings-recommend .share-textbox {
   display: block;
   height: 160px;
-  width: 100%;
   padding: 1em;
+  width: 95%;
+  margin: 0.5em auto;
+  background-color: #eee;
   line-height: 1.5;
   font-size: 16px;
-  border-bottom: 1px solid #c8c7cc;
+  border: 1px solid #c8c7cc;
   margin-top: 10px; }
-  @media all and (min-height: 700px) {
-    .page-settings-recommend .share-textbox {
-      height: 280px; } }
 .page-settings-recommend .shares {
   text-align: center;
   margin: 30px auto;
@@ -1483,7 +1489,7 @@ ng-form {
   width: 35%; }
   @media all and (min-height: 580px) {
     .page-settings-recommend .logo {
-      margin-top: 100px; } }
+      margin-top: 80px; } }
 
 .page-toc, .page-privacy {
   padding: 2em; }
