@@ -176,6 +176,16 @@ angular.module('myApp').config(function ($stateProvider, $urlRouterProvider) {
                 templateUrl: 'templates/toc.html'
               }
             }
+          })
+
+          .state('app.change-profile', {
+            url: '/change-profile',
+            views: {
+              'menuContent': {
+                templateUrl: 'templates/change-profile.html',
+                controller: 'ChangeProfileCtrl'
+              }
+            }
           });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/start');
