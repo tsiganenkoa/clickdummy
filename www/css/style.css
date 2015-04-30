@@ -1536,7 +1536,8 @@ ng-form {
 .page-change-profile form .list .item {
   font-size: 16px; }
   .page-change-profile form .list .item input {
-    font-size: 16px; }
+    font-size: 16px;
+    line-height: 34px; }
 .page-change-profile form .list .item-select {
   min-height: 47px; }
   .page-change-profile form .list .item-select em {
